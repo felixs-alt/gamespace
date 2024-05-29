@@ -17,11 +17,11 @@ function script(text) {
 // ====================================
 const gogascript27 = document.createElement("script");
 gogascript27.setAttribute("async", "");
-gogascript27.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-98DP5VKS42");
+gogascript27.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-5RRW1VCDP0");
 const inlinegogascript843 = document.createElement("script");
 inlinegogascript843.innerHTML = `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-98DP5VKS42');`;
+      gtag('config', 'G-5RRW1VCDP0');`;
 document.head.append(gogascript27, inlinegogascript843);
 script("Injected script 1/1 (Google Tag Manager)");

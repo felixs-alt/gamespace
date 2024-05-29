@@ -5,60 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="The better unblocked games website." />
     <meta name="keywords" content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git" />
-    <meta name="author" content="3kh0, relived." />
-    <meta content="3kh0, relived." property="og:title" />
+    <meta name="author" content="3kh0" />
+    <meta content="3kh0" property="og:title" />
     <meta content="The better unblocked games website." property="og:description" />
-    <meta content="./images/icon.png" property="og:image" />
-    <title>3kh0, relived.</title>
-    <link rel="apple-touch-icon" href="./images/logo.png">
+    <meta content="/images/logo.png" property="og:image" />
     <link href="./images/logo.png" rel="icon" />
     <link href="./css/index.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer></script>
-    <link rel="manifest" href="/manifest.json" />
-    <script src="./assets/js/webrtc-ip.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="./js/main.js"></script>
+    
+    <title>Projects | 3kh0</title>
   </head>
   <body>
-    <div class="navbar">
-      <div class="navitems">
-        <img onclick="location.href='https://www.youtube.com/@whoisev'" src="./images/logo.png" class="navlogo" draggable="false" />
-        <a href="/"><div class="navitem" current>Home</div></a>
-        <a href="./projects.html"><div class="navitem">Projects</div></a>
-        <a href="./extras.html"><div class="navitem">Extras</div></a>
-        <a href="./blog/index.html"><div class="navitem">Blog</div></a>
-        <a href="./settings.html"><div class="navitem">Settings</div></a>
-        <a href="./about.html"><div class="navitem">About</div></a>
-        <a href="https://discord.gg/DtJZE3cgwj" target="_blank"><div class="navitem">Discord</div></a>
-      </div>
-    </div>
-
-    <div class="title">3kh0</div>
+    <header><center><img src="./images/banner.png"></center></header>
     <center>
-      <div class="message homemessage" onclick="setRandomSay()">We are currently experiencing issues with the quotes. We are trying our best to fix the issue as soon as possible. -WhoIsEv?</div>
-      <p class="section-text"><a href="./blog/v4.2.3.html">Welcome to v4.2.3!</a></p>
-      <p class="section-text"><a href="./changelog.html">Click here to see our recent updates.</a></p>
-      <p class="section-text">This version may include bugs so please, join our <a href="https://discord.gg/DtJZE3cgwj" target="_blank">Discord Server</a> to report them and I will quickly fix them asap.</p>
-      <br />
-      <a href="/projects" class="play-link" data-aos="fade-up"><button class="play">Play Now</button></a>
+      <input onkeyup="searchGames(this.value.trim().toLowerCase())" class="searchbar" placeholder="Search" />
     </center>
 
-    <a href="#reviews"><button class="reviews-link">Reviews</button></a>
+    <div class="saveItems">
+      <button class="button" onclick="downloadMainSave()">Download Save</button>
+      <button class="button" onclick="uploadMainSave()">Upload Save</button>
+	    <div class="button" hidden><a href="https://relivedassets.onrender.com/neal.fun/index.html"><button class="button">neal.fun!</button></a></div>
+      <div class="uploadResult"></div>
+    </div>
 
-    <div id="reviews"></div>
-
-    <div id="my-keen-slider" class="keen-slider"></div>
+    <input class="hiddenUpload" type="file" accept=".save" />
     
-    <footer>© WhoIsEv 2024</footer>
+    <div class="games"></div>
+    <span class="spinner">
+      <svg viewBox="22 22 44 44">
+        <circle class="spinnerSvg" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
+      </svg>
+    </span>
+    <div class="nogames">No results found.</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="./assets/js/keen-slider.min.js"></script>
-    <script src="./js/reviews.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+    <script src="./js/games.js"></script>
     <script src="./js/index.js"></script>
-    <script src="./js/home.js"></script>
   </body>
 </html>
