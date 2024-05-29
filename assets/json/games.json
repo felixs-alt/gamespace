@@ -1375,6 +1375,11 @@
       "img": "https://relivedassets.onrender.com/snowbattle/img/logo.png"
     },
     {
+      "name": "Snow Rider 3D",
+      "url": "https://relivedassets.onrender.com/snowrider3d/index.html",
+      "img": "https://relivedassets.onrender.com/snowrider3d/images/logo.png"
+    },
+    {
       "name": "Soccer Random",
       "url": "https://relivedassets.onrender.com/soccer-random/index.html",
       "img": "https://relivedassets.onrender.com/soccer-random/unnamed.png"
@@ -1661,7 +1666,7 @@
     },
     {
       "name": "Twitch Tetris",
-      "url": "https://relivedassets.onrender.com/twitch-tetris/index.html",
+      "url": "https://felixs-alt.github.io/twitch-tetris/index.html",
       "img": "https://relivedassets.onrender.com/twitch-tetris/logo.png"
     },
     {
