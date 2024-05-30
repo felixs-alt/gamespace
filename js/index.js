@@ -225,8 +225,8 @@ tsParticles.load({
 
   options: {
     preset: "stars",
+    fpsLimit: 20,
   },
-  fpsLimit: 20,
 });
 createSecretThemeType("nebelung", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
 createSecretThemeType("piplup", ["p", "i", "p", "l", "u", "p", "i", "s", "c", "o", "o", "l"])
