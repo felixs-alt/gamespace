@@ -33,22 +33,6 @@ const jsdelivr = document.createElement("script");
 jsdelivr.setAttribute("src", "./js/main.js");
 document.head.append(jsdelivr);
 
-var tab = localStorage.getItem("tab");
-if (tab) {
-  try {
-    var tabData = JSON.parse(tab);
-  } catch {
-    var tabData = {};
-  }
-} else {
-  var tabData = {};
-}
-if (tabData.title) {
-  document.title = tabData.title;
-}
-if (tabData.icon) {
-  document.querySelector("link[rel='icon']").href = tabData.icon;
-}
 
 function getContrastHex(hexcolor) {
   hexcolor = hexcolor.replace("#", "");
@@ -73,7 +57,7 @@ var theme = localStorage.getItem("theme") || "default";
 const themes = [
   {
     theme: 'default',
-    color: '#4caf50'
+    color: '#17ff8e'
   },
   {
     theme: 'light',
@@ -236,6 +220,14 @@ document.addEventListener("keydown", function (e) {
 secretThemeButton(name)
 }
 
+tsParticles.load({
+  id: "tsparticles",
+
+  options: {
+    preset: "stars",
+  },
+  fpsLimit: 20,
+});
 createSecretThemeType("nebelung", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
 createSecretThemeType("piplup", ["p", "i", "p", "l", "u", "p", "i", "s", "c", "o", "o", "l"])
 createSecretThemeType("forternish", ["c", "o", "m", "i", "c", "s", "a", "n", "s"])

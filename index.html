@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.4.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-stars@3/tsparticles.preset.stars.bundle.min.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="/images/logo.png" property="og:image" />
     <link href="./images/logo.png" rel="icon" />
     <link href="./css/index.css" rel="stylesheet" />
-    
     <title>Gamespace</title>
   </head>
-  <body>
-    <header><center><img src="./images/banner.png" width="680" height="140"  style="padding-top: 2%;"></center></header>
+  <body style="background-color: #1c1c1c;">
+    <div style="z-index: -10;" id="tsparticles"></div>
     <center>
-      <input onkeyup="searchGames(this.value.trim().toLowerCase())" class="searchbar" placeholder="Search" />
+      <img src="./images/banner.png" width="680" height="140" style="padding-top: 2%;user-select: none;"/>
+      <input onkeyup="searchGames(this.value.trim().toLowerCase())" class="searchbar" placeholder="Search"/>
     </center>
-
     <div hidden class="saveItems">
       <button hidden ="button" onclick="downloadMainSave()">Download Save</button>
       <button hidden ="button" onclick="uploadMainSave()">Upload Save</button>
       <div hidden ="uploadResult"></div>
     </div>
-
     <input hidden class="hiddenUpload" type="file" accept=".save" />
-    
-    <div class="games"></div>
+    <div class="games">
+    </div>
     <span class="spinner">
       <svg viewBox="22 22 44 44">
         <circle class="spinnerSvg" cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
       </svg>
     </span>
     <div class="nogames">No results found.</div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <script src="./js/games.js"></script>
     <script src="./js/index.js"></script>

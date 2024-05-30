@@ -251,7 +251,7 @@ footer {
   background: var(--theme);
   color: var(--text);
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -265,6 +265,7 @@ footer {
 
 .game:hover {
   transform: scale(0.9);
+  box-shadow: 0px 0px 30px #17ff8f7f;
 }
 
 .game[hidden] {
