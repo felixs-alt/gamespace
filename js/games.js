@@ -28,7 +28,12 @@ function searchGames(query) {
   
     var gamesData = await fetch('./assets/json/games.json');
     var games = await gamesData.json();
+    games.sort( function( a, b ) {
+      a = a.name.toLowerCase();
+      b = b.name.toLowerCase();
   
+      return a < b ? -1 : a > b ? 1 : 0;
+    });
     for (let game in games) {
       var newGame = document.createElement("a");
       newGame.className = "game";
