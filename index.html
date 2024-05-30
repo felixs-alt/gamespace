@@ -15,14 +15,13 @@
       <input onkeyup="searchGames(this.value.trim().toLowerCase())" class="searchbar" placeholder="Search" />
     </center>
 
-    <div class="saveItems">
-      <button class="button" onclick="downloadMainSave()">Download Save</button>
-      <button class="button" onclick="uploadMainSave()">Upload Save</button>
-	    <div class="button" hidden><a href="https://relivedassets.onrender.com/neal.fun/index.html"><button class="button">neal.fun!</button></a></div>
-      <div class="uploadResult"></div>
+    <div hidden class="saveItems">
+      <button hidden ="button" onclick="downloadMainSave()">Download Save</button>
+      <button hidden ="button" onclick="uploadMainSave()">Upload Save</button>
+      <div hidden ="uploadResult"></div>
     </div>
 
-    <input class="hiddenUpload" type="file" accept=".save" />
+    <input hidden class="hiddenUpload" type="file" accept=".save" />
     
     <div class="games"></div>
     <span class="spinner">
