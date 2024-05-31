@@ -181,11 +181,43 @@ class changelogChanged extends HTMLElement {
 customElements.define("changelog-changed", changelogChanged);
 
 function foundSecretTheme(name) {
-  document.body.setAttribute("theme", name);
-  localStorage.setItem("theme", name);
-  localStorage.setItem(name, "true");
-  if (document.querySelector("." + name)) {
-    document.querySelector("." + name).removeAttribute("hidden");
+  if (localStorage.theme == name){
+    if (name == "ipaddr"){
+      let elementArray = [].slice.call(document.getElementsByClassName("game"), 0);
+      for (var i = 0; i < elementArray.length; ++i)
+        elementArray[i].hidden = false;
+      document.getElementsByClassName("searchbar")[0].hidden = false
+    }
+    document.body.setAttribute("theme", "default");
+    localStorage.setItem("theme", "default");
+    localStorage.setItem("default", "true");
+  
+  } else {
+    if (name == "ipaddr"){
+      let elementArray = [].slice.call(document.getElementsByClassName("game"), 0);
+      for (var i = 0; i < elementArray.length; ++i)
+        elementArray[i].hidden = true;
+      document.getElementsByClassName("searchbar")[0].hidden = true
+      let apiKey = 'be0f755b93290b4c100445d77533d291763a417c75524e95e07819ad';
+      $.getJSON('https://api.ipdata.co?api-key=' + apiKey, function(data) {
+        let i = 0
+        for(var name in data ) {
+          i++
+          if (i>14){
+            return;
+          }
+          let node = document.createElement("p")
+          node.innerText =  name + " : " + data[ name ]
+          node.style = "text-align: center; color: #FFFFFF;"
+          document.getElementById("ipaddr").appendChild(node) // Days is not a number
+        }
+      });
+
+    } else {
+      document.body.setAttribute("theme", name);
+      localStorage.setItem("theme", name);
+      localStorage.setItem(name, "true");
+    }
   }
 }
 
@@ -216,8 +248,6 @@ document.addEventListener("keydown", function (e) {
     foundSecretTheme(name);
   }
 });
-  
-secretThemeButton(name)
 }
 
 tsParticles.load({
@@ -228,7 +258,4 @@ tsParticles.load({
     fpsLimit: 20,
   },
 });
-createSecretThemeType("nebelung", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
-createSecretThemeType("piplup", ["p", "i", "p", "l", "u", "p", "i", "s", "c", "o", "o", "l"])
-createSecretThemeType("forternish", ["c", "o", "m", "i", "c", "s", "a", "n", "s"])
-createSecretThemeType("whoisev", ["w", "h", "o", "i", "s", "e", "v", "i", "s", "c", "o", "o", "l"])
+createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
