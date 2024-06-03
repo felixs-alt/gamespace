@@ -1815,5 +1815,17 @@
       "name": "Super Metroid",
       "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Super%20Metroid%20%28Japan%2C%20USA%29%20%28En%2CJa%29.sfc",
       "img": "./assets/images/Super.webp"
+    },{
+      "name": "Metroid Zero Mission",
+      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20-%20Zero%20Mission%20%28Europe%29%20%28En%2CFr%2CDe%2CEs%2CIt%29.zip",
+      "img": "./assets/images/ZM.webp"
+    },{
+      "name": "Metroid II",
+      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20II%20-%20Return%20of%20Samus%20%28World%29.zip",
+      "img": "./assets/images/II.png"
+    },{
+      "name": "Metroid II",
+      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20II%20-%20Return%20of%20Samus%20%28World%29.zip",
+      "img": "./assets/images/II.png"
     }
   ]
