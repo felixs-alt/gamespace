@@ -1,3 +1,4 @@
+ll = new LazyLoad({})
 function searchGames(query) {
   var gamesElement = document.querySelector(".games");
 
@@ -45,8 +46,8 @@ function searchGames(query) {
     outline.appendChild(newGame);
 
     var gameImage = document.createElement("img");
-    gameImage.className = "game-image";
-    gameImage.src = games[game].img
+    gameImage.className = "game-image lazy";
+    gameImage.setAttribute("data-src",games[game].img);
     gameImage.setAttribute("onerror", "this.src='./assets/globe.svg'")
 
     newGame.appendChild(gameImage);
@@ -61,6 +62,7 @@ function searchGames(query) {
   }
 
   document.querySelector(".spinner").style.display = "none";
+  ll.update();
 })();
 
 function getMainSave() {
