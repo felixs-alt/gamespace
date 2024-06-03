@@ -33,6 +33,7 @@ const jsdelivr = document.createElement("script");
 jsdelivr.setAttribute("src", "./js/main.js");
 document.head.append(jsdelivr);
 
+
 function getContrastHex(hexcolor) {
   hexcolor = hexcolor.replace("#", "");
   var r = parseInt(hexcolor.substr(0, 2), 16);
@@ -251,7 +252,6 @@ document.addEventListener("keydown", function (e) {
 
 tsParticles.load({
   id: "tsparticles",
-
   options: {
     preset: "stars",
     fpsLimit: 20,
