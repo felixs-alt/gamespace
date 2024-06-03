@@ -1,3 +1,5 @@
+ll = new LazyLoad({});
+
 function searchGames(query) {
     var gamesElement = document.querySelector(".games");
   
@@ -35,13 +37,18 @@ function searchGames(query) {
       return a < b ? -1 : a > b ? 1 : 0;
     });
     for (let game in games) {
+      var outline = document.createElement("div");
+      outline.className = "outline";
+
       var newGame = document.createElement("a");
       newGame.className = "game";
       newGame.setAttribute("href", games[game].url);
-  
+      
+      outline.appendChild(newGame);
+
       var gameImage = document.createElement("img");
-      gameImage.className = "game-image";
-      gameImage.src = games[game].img
+      gameImage.className = "game-image lazy";
+      gameImage.setAttribute('data-src',games[game].img)
       gameImage.setAttribute("onerror", "this.src='./assets/globe.svg'")
   
       newGame.appendChild(gameImage);
@@ -52,10 +59,12 @@ function searchGames(query) {
   
       newGame.appendChild(gameText);
   
-      gamesElement.appendChild(newGame);
+      gamesElement.appendChild(outline);
     }
   
     document.querySelector(".spinner").style.display = "none";
+    
+    ll.update();
   })();
   
   function getMainSave() {

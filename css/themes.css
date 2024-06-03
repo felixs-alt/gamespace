@@ -1,8 +1,8 @@
 body[theme="default"] {
   --background: #1c1c1c;
-  --theme: #17ff8e;
-  --text: black;
-  --text-secondary: black;
+  --theme: rgb(46, 46, 46);
+  --text: #17ff8e;
+  --text-secondary: #17ff8e;
 }
 
 body[theme="light"] {
