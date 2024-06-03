@@ -1807,5 +1807,13 @@
       "name": "Pokemon Adventure - Red Chapter",
       "url": "https://felixs-alt.github.io/webretro/?core=mgba&rom=https://raw.githack.com/felixs-alt/Roms/main/AdventureRed.gba",
       "img": "./assets/images/redchapter.jpg"
+    },{
+      "name": "Metroid Fusion",
+      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20Fusion%20%28USA%2C%20Australia%29.zip",
+      "img": "./assets/images/Fusion.jpg"
+    },{
+      "name": "Super Metroid",
+      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Super%20Metroid%20%28Japan%2C%20USA%29%20%28En%2CJa%29.sfc",
+      "img": "./assets/images/Super.webp"
     }
   ]
