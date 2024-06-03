@@ -1824,8 +1824,12 @@
       "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20II%20-%20Return%20of%20Samus%20%28World%29.zip",
       "img": "./assets/images/II.png"
     },{
-      "name": "Metroid II",
-      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20II%20-%20Return%20of%20Samus%20%28World%29.zip",
-      "img": "./assets/images/II.png"
+      "name": "Metroid",
+      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20(U).zip",
+      "img": "./assets/images/Metro.jpg"
+    },{
+      "name": "Metroid",
+      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20(U).zip",
+      "img": "./assets/images/Metro.jpg"
     }
   ]
