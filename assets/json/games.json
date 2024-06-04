@@ -1827,9 +1827,5 @@
       "name": "Metroid",
       "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20(U).zip",
       "img": "./assets/images/Metro.jpg"
-    },{
-      "name": "Metroid",
-      "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Metroid%20(U).zip",
-      "img": "./assets/images/Metro.jpg"
     }
   ]
