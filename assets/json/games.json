@@ -1830,7 +1830,7 @@
     },{
       "name": "Sonic 3 and Knuckles",
       "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Sonic%20%26%20Knuckles%20%2B%20Sonic%20The%20Hedgehog%203%20(Europe).zip",
-      "img": "./assets/images/NA.webp"
+      "img": "./assets/images/na.webp"
     },{
       "name": "Sonic 2",
       "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://billnyethescienceguy21.github.io/amogungus/Sonic%20The%20Hedgehog%202%20%28World%29.zip",
