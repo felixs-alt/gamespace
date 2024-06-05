@@ -249,12 +249,32 @@ document.addEventListener("keydown", function (e) {
   }
 });
 }
+(async () => {
+  await loadStarsPreset(tsParticles);
 
-tsParticles.load({
-  id: "tsparticles",
-  options: {
-    preset: "stars",
-    fpsLimit: 20,
-  },
-});
+  tsParticles.load({
+    id: "tsparticles",
+    options: {
+      particles: {
+        number: {
+          value: 855,
+          density: {
+            enable: true,
+            value_area: 789.1476416322727
+          }
+        },
+        color: {
+          value: "#ffffff"
+        },
+        size: {
+          value: 1.3,
+        },
+        move: {
+          speed: 0.4,
+        }
+      },
+      preset: "stars"
+    }
+  });
+})();
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
