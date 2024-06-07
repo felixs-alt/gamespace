@@ -2180,11 +2180,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/block.io.webp"
   },
   {
-      "name": "Country Guesser Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Country_Guesser_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Country_Guesser_Game.webp"
-  },
-  {
       "name": "Touch The Ball",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Touch_The_Ball",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/touch_the_ball.webp"
@@ -2810,11 +2805,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Space Invaders.webp"
   },
   {
-      "name": "Cut The Rope",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Cut_the_rope",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Cut_the_rope.webp"
-  },
-  {
       "name": "Caeser Cipher",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Caesar_Cipher",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/caesar.webp"
@@ -3400,11 +3390,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/color_switch_challenger.png"
   },
   {
-      "name": "color switch challenger",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/color_switch_challenger",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/color_switch_challenger.png"
-  },
-  {
       "name": "Quizify",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Quizify",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Quizify.png"
@@ -3475,11 +3460,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/PathPlex.png"
   },
   {
-      "name": "Squid",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Squid_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Squid_Game.jpg"
-  },
-  {
       "name": "CSS Crossword",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/CSS_Crossword",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/CSS_Crossword.webp"
@@ -3488,11 +3468,6 @@
       "name": "CSS Select",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/CSS_Select",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/CSS_Select.png"
-  },
-  {
-      "name": "Squid",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Squid_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Squid_Game.jpg"
   },
   {
       "name": "Flip Coin",
