@@ -194,6 +194,9 @@ function foundSecretTheme(name) {
   
   } else {
     if (name == "ipaddr"){
+      Array.prototype.forEach.call(document.getElementById("weekly").children, function(el) {
+        el.hidden = true
+      });
       let elementArray = [].slice.call(document.getElementsByClassName("game"), 0);
       for (var i = 0; i < elementArray.length; ++i)
         elementArray[i].hidden = true;
