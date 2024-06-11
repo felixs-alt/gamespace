@@ -1,10 +1,11 @@
 ll = new LazyLoad({})
 function searchGames(query) {
-  var gamesElement = document.querySelector(".games");
+  var gamesElement = document.getElementById("games")
 
   for (let game in gamesElement.children) {
     if (gamesElement.children[game] instanceof Element) {
       if (query) {
+        document.getElementById("weekly").setAttribute("hidden", "");
         var gameName = gamesElement.children[game].querySelector(".game-text").innerText.trim().toLowerCase();
         if (gameName.includes(query)) {
           gamesElement.children[game].removeAttribute("hidden");
@@ -12,6 +13,7 @@ function searchGames(query) {
           gamesElement.children[game].setAttribute("hidden", "");
         }
       } else {
+        document.getElementById("weekly").removeAttribute("hidden");
         gamesElement.children[game].removeAttribute("hidden");
       }
     }
@@ -25,7 +27,10 @@ function searchGames(query) {
 }
 
 (async () => {
-  var gamesElement = document.querySelector(".games");
+  var gamesElement = document.getElementById("games")
+  var topGamesElement = document.getElementById("topgames");
+  var topGames = await fetch('./assets/json/topGames.json')
+  var topGamesArr = Array.from(await topGames.json())
 
   var gamesData = await fetch('./assets/json/games.json');
   var games = await gamesData.json();
@@ -57,8 +62,11 @@ function searchGames(query) {
     gameText.innerText = games[game].name;
 
     newGame.appendChild(gameText);
-
-    gamesElement.appendChild(outline);
+    if (topGamesArr.includes(games[game].name)){
+      topGamesElement.appendChild(outline);
+    } else {
+      gamesElement.appendChild(outline);
+    }
   }
 
   document.querySelector(".spinner").style.display = "none";

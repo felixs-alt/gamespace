@@ -11,7 +11,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--theme);
+  background: var(--text);
   border: 4px solid transparent;
   background-clip: content-box;
   border-radius: 8px;
@@ -290,14 +290,14 @@ footer {
 
 .game-text {
   line-height: 40px;
-  width: 200px;
+  font-size: 4vw;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: var(--text-secondary);
   padding: 0 10px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .nogames {

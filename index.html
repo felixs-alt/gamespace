@@ -14,8 +14,8 @@
   <body style="background-color: #1c1c1c;">
     <div style="z-index: -10;" id="tsparticles"></div>
     <center>
-      <img src="./images/banner.png" width="680" height="140" style="padding-top: 2%;user-select: none;"/>
-      <input onkeyup="searchGames(this.value.trim().toLowerCase())" class="searchbar" placeholder="Search"/>
+      <header><img src="./images/banner.png" width="680" height="140" style="padding-top: 2%;user-select: none;"/></header>
+      <input autocomplete="off" onkeyup="searchGames(this.value.trim().toLowerCase())" class="searchbar" placeholder="Search"/>
     </center>
     <div hidden class="saveItems">
       <button hidden ="button" onclick="downloadMainSave()">Download Save</button>
@@ -24,7 +24,15 @@
     </div>
     <input hidden class="hiddenUpload" type="file" accept=".save" />
     <div id="ipaddr"></div>
-    <div class="games">
+    <div id="weekly">
+    <center><h2>Weekly Games</h2></center>
+    <hr style="width: 95%;height:3px;color:#17ff8e;background-color:#17ff8e;border-style: none;"> 
+    <div id="topgames" class="games">
+    </div>
+    <hr style="width: 95%;height:3px;color:#17ff8e;background-color:#17ff8e;border-style: none;"> 
+    <center><h2>Games A-Z</h2></center>
+    </div>
+    <div id="games" class="games">
     </div>
     <span class="spinner">
       <svg viewBox="22 22 44 44">
