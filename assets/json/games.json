@@ -97,17 +97,12 @@
   {
       "name": "Angry Sharks",
       "url": "https://relivedassets.onrender.com/angry-sharks/index.html",
-      "img": "https://relivedassets.onrender.com/angry-sharks/icon-512x512.png"
+      "img": "https://relivedassets.onrender.com/angry-sharks/assets/favicon/icon-512x512.png"
   },
   {
       "name": "Aquapark slides",
       "url": "https://relivedassets.onrender.com/aquapark-slides/index.html",
       "img": "https://relivedassets.onrender.com/aquapark-slides/splash.png"
-  },
-  {
-      "name": "Astray",
-      "url": "https://relivedassets.onrender.com/astray/index.html",
-      "img": "https://relivedassets.onrender.com/astray/splash.png"
   },
   {
       "name": "Avalanche",
@@ -1895,11 +1890,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Piano_game.webp"
   },
   {
-      "name": "Atari Breakout",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Atari_breakout",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Atari_breakout.webp"
-  },
-  {
       "name": "Dinosaur Game",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Chrome_Dinosaur_Game",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Chrome_dinosaur_runner.webp"
@@ -1925,24 +1915,9 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Aim_Training.webp"
   },
   {
-      "name": "Alien Shooter",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Alien_Shooters",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Alien_Shooter.webp"
-  },
-  {
-      "name": "Alphabet Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Alphabet",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Alphabet.webp"
-  },
-  {
       "name": "Candy Crush",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Candy_Crush",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/candy_crush.webp"
-  },
-  {
-      "name": "Word Association Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Word_Association_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Word_Association.webp"
   },
   {
       "name": "Tic Tac Toe",
@@ -2355,11 +2330,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Glitch_Buster.webp"
   },
   {
-      "name": "3d Box",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/3d_Box_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/3d_Box.webp"
-  },
-  {
       "name": "Escape",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Escape",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Escape.webp"
@@ -2720,11 +2690,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/bad_Depot.webp"
   },
   {
-      "name": "Achluophobia",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Achluophobia",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Achluophobia.webp"
-  },
-  {
       "name": "Timber Terry",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Timber_Terry",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/timber_terry.webp"
@@ -2793,11 +2758,6 @@
       "name": "Ludo 4 Player",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Ludo_4_Player",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Ludo_4_Player.webp"
-  },
-  {
-      "name": "Air Balloon",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/AirBalloon",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/AirBalloon.webp"
   },
   {
       "name": "Space Invadors",
@@ -3020,24 +2980,9 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Color Matcher.webp"
   },
   {
-      "name": "Guess The Random Shape",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Guess_The_Random_Shape",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Guess_The_Random_Shape.webp"
-  },
-  {
       "name": "Save Doraemon",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Save_Doraemon",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Save_Doraemon.webp"
-  },
-  {
-      "name": "Animal Match Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Animal_Match_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Animal_Match_Game.webp"
-  },
-  {
-      "name": "MrFakeGame",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/MrFakeGame",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/MrFakeGame.webp"
   },
   {
       "name": "Checkers",
@@ -3048,11 +2993,6 @@
       "name": "Roulette",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Roulette",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Roulette.webp"
-  },
-  {
-      "name": "Aero Acrobat",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Aero_Acrobat",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Aero_acrobat.webp"
   },
   {
       "name": "Adventure Game",
@@ -3173,11 +3113,6 @@
       "name": "Lizard Spock Game",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Lizard Spock Game",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Lizard_Spock_Game.webp"
-  },
-  {
-      "name": "Angry Boars",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Angry_Boars",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Angry_boars.webp"
   },
   {
       "name": "Country Guesser Game",
@@ -3438,11 +3373,6 @@
       "name": "Chopsticks",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Chopsticks",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Chopsticks.png"
-  },
-  {
-      "name": "Anime Clicker",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Anime_Clicker",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Anime_Clicker.png"
   },
   {
       "name": "Rocket Showdown",
