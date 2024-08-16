@@ -340,11 +340,6 @@
       "img": "https://relivedassets.onrender.com/ctr-holiday/Holiday_Gift.webp"
   },
   {
-      "name": "Cut the Rope Time Travel",
-      "url": "https://relivedassets.onrender.com/ctr-tr/index.html",
-      "img": "https://relivedassets.onrender.com/ctr-tr/logo.png"
-  },
-  {
       "name": "Cubefield",
       "url": "https://relivedassets.onrender.com/cubefield/index.html",
       "img": "https://relivedassets.onrender.com/cubefield/assets/unnamed.png"
@@ -355,21 +350,6 @@
       "img": "https://relivedassets.onrender.com/cupcake2048/favicon.png"
   },
   {
-      "name": "Dante",
-      "url": "https://relivedassets.onrender.com/dante/index.html",
-      "img": "https://relivedassets.onrender.com/dante/splash.png"
-  },
-  {
-      "name": "Deal or No Deal",
-      "url": "https://relivedassets.onrender.com/deal-or-no-deal/index.html",
-      "img": "https://relivedassets.onrender.com/deal-or-no-deal/index.jpg"
-  },
-  {
-      "name": "Death Run 3D",
-      "url": "https://relivedassets.onrender.com/death-run-3d/index.html",
-      "img": "https://relivedassets.onrender.com/death-run-3d/img/death.png"
-  },
-  {
       "name": "Deepest Sword",
       "url": "https://relivedassets.onrender.com/deepest-sword/index.html",
       "img": "https://relivedassets.onrender.com/deepest-sword/splash.jpg"
@@ -378,11 +358,6 @@
       "name": "Defend the Tank",
       "url": "https://relivedassets.onrender.com/defend-the-tank/index.html",
       "img": "https://relivedassets.onrender.com/defend-the-tank/images/splash.jpg"
-  },
-  {
-      "name": "Doctor Acorn 2",
-      "url": "https://relivedassets.onrender.com/doctor-acorn2/index.html",
-      "img": "https://relivedassets.onrender.com/doctor-acorn2/splash.jpg"
   },
   {
       "name": "Dodge",
@@ -2500,11 +2475,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Infernal_Throne.webp"
   },
   {
-      "name": "Dead Again",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Dead_Again",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Dead_Again.webp"
-  },
-  {
       "name": "Norman The Necromancer",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Norman_The_Necromancer",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Norman_The_Necromancer.webp"
@@ -2810,11 +2780,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Pokemon%20Ball%20Finder.webp"
   },
   {
-      "name": "Baseketball",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Baseketball",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Basketball.webp"
-  },
-  {
       "name": "Wault Master",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Wault_master",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Wault_master.webp"
@@ -2898,11 +2863,6 @@
       "name": "Trex Run",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Trex_Run",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Trex_Run.png"
-  },
-  {
-      "name": "Death by Hamster",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Death%20by%20Hamster",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Death%20by%20Hamster.png"
   },
   {
       "name": "Scribble",
