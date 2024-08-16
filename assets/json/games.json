@@ -2151,7 +2151,7 @@
   },
   {
       "name": "Pokedex",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Pokedex",
+      "url": "https://lazyjinchuriki.github.io/pokedex",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/pokedex.webp"
   },
   {
@@ -3023,11 +3023,6 @@
       "name": "Hit Target",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Hit_Target",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Hit_Target.png"
-  },
-  {
-      "name": "Archery",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Archery",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Archery.png"
   },
   {
       "name": "Quizify",
