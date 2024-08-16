@@ -29,7 +29,7 @@ function searchGames(query) {
 (async () => {
   var gamesElement = document.getElementById("games")
   var topGamesElement = document.getElementById("topgames");
-  var topGames = await fetch('./assets/json/topGames.json')
+  var topGames = await fetch('./assets/json/top5Games.json')
   var topGamesArr = Array.from(await topGames.json())
 
   var gamesData = await fetch('./assets/json/games.json');
