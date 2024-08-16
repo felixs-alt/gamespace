@@ -60,16 +60,6 @@
       "img": "https://relivedassets.onrender.com/adarkroom/splash.png"
   },
   {
-      "name": "Adrenaline Challenge",
-      "url": "https://relivedassets.onrender.com/adrenalinechallenge/index.html",
-      "img": "https://relivedassets.onrender.com/adrenalinechallenge/adrenalinechallenge.jpg"
-  },
-  {
-      "name": "Adventure Drivers",
-      "url": "https://relivedassets.onrender.com/adventure-drivers/index.html",
-      "img": "https://relivedassets.onrender.com/adventure-drivers/splash.png"
-  },
-  {
       "name": "Age of Conflict",
       "url": "https://relivedassets.onrender.com/ages-of-conflict/index.html",
       "img": "https://relivedassets.onrender.com/ages-of-conflict/splash.jpg"
@@ -313,11 +303,6 @@
       "name": "Table Tennis Ultimate",
       "url": "https://relivedassets.onrender.com/cnpingpong/index.html",
       "img": "https://relivedassets.onrender.com/cnpingpong/tabletennisultimate.png"
-  },
-  {
-      "name": "Connect 3",
-      "url": "https://relivedassets.onrender.com/connect3/index.html",
-      "img": "https://relivedassets.onrender.com/connect3/connect3.png"
   },
   {
       "name": "Core Ball",
@@ -1885,11 +1870,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Chrome_dinosaur_runner.webp"
   },
   {
-      "name": "Color guessing Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Colour_Guessing_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Colour_Guessing_Game.webp"
-  },
-  {
       "name": "Number guessing Game",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Guess_The_Number",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Guess_The_Number.webp"
@@ -2065,11 +2045,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/MazeGame.webp"
   },
   {
-      "name": "Connect4",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Connect4",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/connect4.webp"
-  },
-  {
       "name": "Spelling Bee",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Spelling_Bee",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/spelling_bee.webp"
@@ -2165,19 +2140,9 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/packabunchas.webp"
   },
   {
-      "name": "Cast and Catch",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Cast_and_Catch",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Cast_and_Catch.webp"
-  },
-  {
       "name": "Track Not Found",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Track_Not_Found",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Track_Not_Found.webp"
-  },
-  {
-      "name": "Love Calculator",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Love_Calcilove.html",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Love_Calci.webp"
   },
   {
       "name": "Planet Game",
@@ -2218,21 +2183,6 @@
       "name": "Duck Hunting Game",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Duck_Hunting_Game",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Duck_Hunting_Game.webp"
-  },
-  {
-      "name": "Color Matcher",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Color_Matcher",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Color%20Matcher.webp"
-  },
-  {
-      "name": "Catch the Bunny",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Catch_the_Bunny",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Catch_the_Bunny.webp"
-  },
-  {
-      "name": "Catch me game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Catch_me_game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Catch_me_game.webp"
   },
   {
       "name": "Falling Blocks",
@@ -2348,11 +2298,6 @@
       "name": "Fall Down",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Fall_Down",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/falldown.webp"
-  },
-  {
-      "name": "Cat Goric",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Cat_Goric",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Cat_Goric.webp"
   },
   {
       "name": "Cable Maze",
@@ -2505,11 +2450,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Word_search_puzzle.webp"
   },
   {
-      "name": "Ballarena",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Ballarena",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/ballarena.webp"
-  },
-  {
       "name": "Shpere",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Shpere",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/shpere.webp"
@@ -2530,17 +2470,12 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/rectangular.webp"
   },
   {
-      "name": "Canon Defense",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Canon_Defense",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/canon_defense.webp"
-  },
-  {
       "name": "Trashem",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Trashem",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/trashem.webp"
   },
   {
-      "name": "CHESS",
+      "name": "Chess",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/CHESS",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Chess.jpg"
   },
@@ -2588,11 +2523,6 @@
       "name": "Charon Jr",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Charon_Jr",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Charon_Jr.webp"
-  },
-  {
-      "name": "Color Matcher",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/ColorMatcher",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/ColorMatcher.webp"
   },
   {
       "name": "Oh Flip",
@@ -2690,11 +2620,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Space Invaders.webp"
   },
   {
-      "name": "Caeser Cipher",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Caesar_Cipher",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/caesar.webp"
-  },
-  {
       "name": "Monster Maker",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Monster_Maker",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Monster_Maker.webp"
@@ -2713,11 +2638,6 @@
       "name": "Highway 404",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Highway_404",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Highway_404.webp"
-  },
-  {
-      "name": "Cross Word",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Crossword_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Crossword_Game.webp"
   },
   {
       "name": "Guess the correct logo",
@@ -2755,11 +2675,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Insect_Catch_Game.webp"
   },
   {
-      "name": "Carnival Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Carnival_game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Carnival_game.webp"
-  },
-  {
       "name": "Make Me Laugh",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Make_Me_Laugh",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Make_Me_Laugh.webp"
@@ -2778,11 +2693,6 @@
       "name": "Run and Jump",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Run and Jump",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Run and Jump.webp"
-  },
-  {
-      "name": "Chess",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/AI-CHESS-Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/chess.webp"
   },
   {
       "name": "Fruit Catching",
@@ -2815,11 +2725,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Hand_cricket.webp"
   },
   {
-      "name": "Crossword Puzzle",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Crossword_Puzzle",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Crossword_Puzzle.webp"
-  },
-  {
       "name": "Pixel Painter",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Pixel_Painter",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Pixel_Painter.webp"
@@ -2833,11 +2738,6 @@
       "name": "Armor Alley",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/ArmorAlley",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/armor-alley_game.webp"
-  },
-  {
-      "name": "Color Switcher",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Color_switcher",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Color_switcher.webp"
   },
   {
       "name": "Maze of Cables",
@@ -2860,19 +2760,9 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Doodle_Draw.webp"
   },
   {
-      "name": "Arcade Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Arcade_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Arcade_Game.webp"
-  },
-  {
       "name": "Slice Storm",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Slice_Storm",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Slice_Storm.webp"
-  },
-  {
-      "name": "CodePen Simulator",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/CodePen_Simulator",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/CodePen_Simulator.webp"
   },
   {
       "name": "PianoTiles Game",
@@ -2888,11 +2778,6 @@
       "name": "UNO",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/UNO",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/UNO.webp"
-  },
-  {
-      "name": "Color Matcher",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Color Matcher",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Color Matcher.webp"
   },
   {
       "name": "Save Doraemon",
@@ -2918,11 +2803,6 @@
       "name": "Pumpkin Pursuit",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Pumpkin_Pursuit",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Pumpkin_Pursuit.webp"
-  },
-  {
-      "name": "Corona Shooter",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Corona_Shooter",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Corona_Shooter.webp"
   },
   {
       "name": "Pokemon Ball Finder",
@@ -2955,11 +2835,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Flag_Guess_Game.webp"
   },
   {
-      "name": "Cross The Road",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Cross_The_Road",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/cross_the_road.webp"
-  },
-  {
       "name": "Highway Race",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Highway_Race",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Highway_Race.png"
@@ -2980,16 +2855,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Observe the Cloud.webp"
   },
   {
-      "name": "Cosmic Coin Collector",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Cosmic_Coin_Collector",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Cosmic_Coin_Collector.webp"
-  },
-  {
-      "name": "Circus Charly",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Circus_Charly",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Circus_Charly.jpeg"
-  },
-  {
       "name": "Pikachu Volleyball",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Pikachu_Volleyball",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Pikachu_Volleyball.webp"
@@ -2998,11 +2863,6 @@
       "name": "Little Red Game",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Little_Red_Game",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Little_Red_Game.gif"
-  },
-  {
-      "name": "Crack The Code",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Crack_The_Code",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Crack_The_Code.webp"
   },
   {
       "name": "Skeleathon",
@@ -3035,11 +2895,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Foosball.png"
   },
   {
-      "name": "Color Crush Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Color_Crush_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Color_Crush_Game.png"
-  },
-  {
       "name": "Trex Run",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Trex_Run",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Trex_Run.png"
@@ -3048,21 +2903,6 @@
       "name": "Death by Hamster",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Death%20by%20Hamster",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Death%20by%20Hamster.png"
-  },
-  {
-      "name": "Trio Match",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Trio_Match",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Trio_Match.png"
-  },
-  {
-      "name": "Ball and glass",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Ball_and_glass",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Ball_and_glass.png"
-  },
-  {
-      "name": "Target Torrent",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Target_Torrent",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Target_Torrent.png"
   },
   {
       "name": "Scribble",
@@ -3130,16 +2970,6 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Maths_Sprint_Game.png"
   },
   {
-      "name": "Chess Game",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Chess_Game",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Chess_Game.jpg"
-  },
-  {
-      "name": "Which Color",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Which_Color",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Which_Color.png"
-  },
-  {
       "name": "Snail Game",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Snail_Game",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Snail_Game.png"
@@ -3200,19 +3030,9 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Archery.png"
   },
   {
-      "name": "color switch challenger",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/color_switch_challenger",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/color_switch_challenger.png"
-  },
-  {
       "name": "Quizify",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Quizify",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Quizify.png"
-  },
-  {
-      "name": "Code Cracker",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Code_Cracker",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Code_Cracker.png"
   },
   {
       "name": "Know Your Country",
@@ -3250,59 +3070,9 @@
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Rotating_Elements.png"
   },
   {
-      "name": "Chopsticks",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Chopsticks",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Chopsticks.png"
-  },
-  {
       "name": "Rocket Showdown",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Rocket_Showdown",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Rocket_Showdown.png"
-  },
-  {
-      "name": "Find Extra Cube",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Find_Extra_Cube",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Find_Extra_Cube.png"
-  },
-  {
-      "name": "PathPlex",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/PathPlex",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/PathPlex.png"
-  },
-  {
-      "name": "CSS Crossword",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/CSS_Crossword",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/CSS_Crossword.webp"
-  },
-  {
-      "name": "CSS Select",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/CSS_Select",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/CSS_Select.png"
-  },
-  {
-      "name": "Flip Coin",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Flip_Coin",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Flip_Coin.png"
-  },
-  {
-      "name": "Witty Word Quest",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/witty_word_quest",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/witty_word_quest.png"
-  },
-  {
-      "name": "Candy match",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Candy_Match_Saga",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/image.png"
-  },
-  {
-      "name": "HueHero",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/HueHero",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/HueHero.png"
-  },
-  {
-      "name": "Puzzel Winner",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Puzzel_Winner",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/Puzzel_winner.png"
   },
   {
       "name": "Emoji Intruder",
