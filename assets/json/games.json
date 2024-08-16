@@ -1390,16 +1390,6 @@
       "img": "https://relivedassets.onrender.com/station-141/75wxYs.png"
   },
   {
-      "name": "Station Meltdown",
-      "url": "https://relivedassets.onrender.com/stationmeltdown/index.html",
-      "img": "https://relivedassets.onrender.com/stationmeltdown/image.png"
-  },
-  {
-      "name": "Stealing The Diamond",
-      "url": "https://relivedassets.onrender.com/stealingthediamond/index.html",
-      "img": "https://relivedassets.onrender.com/stealingthediamond/stealingthediamond.jpg"
-  },
-  {
       "name": "Stick Archers",
       "url": "https://relivedassets.onrender.com/stick-archers/index.html",
       "img": "https://relivedassets.onrender.com/stick-archers/splash.jpg"
@@ -2403,11 +2393,6 @@
       "name": "Spacepi",
       "url": "https://euphonious-haupia-7066f3.netlify.app/games/Spacepi",
       "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/spacepi.webp"
-  },
-  {
-      "name": "Destroyer",
-      "url": "https://euphonious-haupia-7066f3.netlify.app/games/Destroyer",
-      "img": "https://rawcdn.githack.com/felixs-alt/GameZone/main/assets/images/destroyer.webp"
   },
   {
       "name": "Terror Seventy",
