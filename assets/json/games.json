@@ -321,8 +321,13 @@
   },
   {
       "name": "CS:GO Clicker",
-      "url": "https://relivedassets.onrender.com/csgo-clicker/index.html",
+      "url": "http://mtsl.dk/csgo/",
       "img": "https://relivedassets.onrender.com/csgo-clicker/images/vanguard.png"
+  },
+  {
+      "name": "CS:GO Clicker 2",
+      "url": "https://csgo.mtsl.dk",
+      "img": "https://csgo.mtsl.dk/favicon.ico"
   },
   {
       "name": "Cut the Rope",
