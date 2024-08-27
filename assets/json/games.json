@@ -1777,7 +1777,7 @@
   {
     "name": "ONC-Bypass",
     "url": "https://raw.githubusercontent.com/felixs-alt/ONCblock/main/kill.onc",
-    "img": ""
+    "img": "./assets/globe.svg"
   },
   
 ]
