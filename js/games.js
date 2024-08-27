@@ -46,7 +46,7 @@ function searchGames(query) {
 
     var newGame = document.createElement("a");
     newGame.className = "game";
-    newGame.setAttribute("href", games[game].url);
+    newGame.setAttribute("href", "https://proxy.felix-goff.workers.dev/"+games[game].name+"?url="+btoa(games[game].url));
     
     outline.appendChild(newGame);
 
