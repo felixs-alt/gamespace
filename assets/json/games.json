@@ -1778,5 +1778,10 @@
     "name": "ONC-Bypass",
     "url": "https://raw.githubusercontent.com/felixs-alt/ONCblock/main/kill.onc",
     "img": "./assets/globe.svg"
+  },
+  {
+    "name": "PokeDex",
+    "url": "https://pokedex.hybridshivam.com/pokemon",
+    "img": "https://raw.githubusercontent.com/HybridShivam/pokedex-angular-app/master/pokedex.png"
   }
 ]
