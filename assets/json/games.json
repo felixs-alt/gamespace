@@ -1783,5 +1783,10 @@
     "name": "PokeDex",
     "url": "https://pokedex.hybridshivam.com/pokemon",
     "img": "https://raw.githubusercontent.com/HybridShivam/pokedex-angular-app/master/pokedex.png"
+  },
+  {
+    "name": "TheTVApp.to",
+    "url": "https://thetvapp.to/",
+    "img": "https://thetvapp.to/img/TheTVApp.svg"
   }
 ]
