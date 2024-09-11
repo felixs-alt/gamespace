@@ -1793,5 +1793,20 @@
     "name": "𝓯𝓻𝓮𝓪𝓴𝔂-flix",
     "url": "https://www.freaky-flix.top/",
     "img": "https://www.freaky-flix.top/favicon.ico"
-  }
+  },
+  {
+    "name": "Pokemon Shiny Gold Sigma",
+    "url": "https://felixs-alt.github.io/webretro/?core=mgba&rom=https://felixs-alt.github.io/Roms/Pokemon-Shiny-Gold-Sigma1.4.zip",
+    "img": "https://static.pokemoncoders.com/wp-content/uploads/2018/01/ultra-shiny-gold-sigma-cover.jpg"
+  },
+  {
+    "name": "Pokémon Unbound",
+    "url": "https://felixs-alt.github.io/webretro/?core=mgba&rom=https://felixs-alt.github.io/Files/Pokemon-Unbound.gba",
+    "img": "https://preview.redd.it/pok%C3%A9mon-unbound-and-its-importance-for-the-rom-hack-scene-v0-44gzn51wmlab1.png?width=1644&format=png&auto=webp&s=c4b9231b3ce7933606d3e8e16178be1821b24f57"
+  },
+  {
+    "name": "Pokémon Fire Red Version",
+    "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://felixs-alt.github.io/Files/Pokemon%20-%20Fire%20Red%20Version%20%28U%29%20%28V1.1%29.gba",
+    "img": "https://archives.bulbagarden.net/media/upload/thumb/4/43/FireRed_EN_boxart.png/250px-FireRed_EN_boxart.png"
+  },
 ]
