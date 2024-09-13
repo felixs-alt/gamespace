@@ -1808,5 +1808,10 @@
     "name": "Pokemon Fire Red Version",
     "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://felixs-alt.github.io/Files/Pokemon%20-%20Fire%20Red%20Version%20%28U%29%20%28V1.1%29.gba",
     "img": "https://archives.bulbagarden.net/media/upload/thumb/4/43/FireRed_EN_boxart.png/250px-FireRed_EN_boxart.png"
+  },
+  {
+    "name": "Pokemon Glazed",
+    "url": "https://felixs-alt.github.io/webretro/?core=mgba&rom=https://files.catbox.moe/y5dqqx.gba",
+    "img": "https://static.wikia.nocookie.net/fanmadepokemonglazed/images/9/94/Glazed_Box_Art.png"
   }
 ]
