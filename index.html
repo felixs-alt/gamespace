@@ -55,6 +55,15 @@
     <div id="games" class="games">
     </div>
     <div id="iptv">
+      <center><img src="https://thetvapp.to/img/TheTVApp.svg" href="https://thetvapp.to/"></center>
+      <video
+      id="my-video"
+      class="video-js"
+      controls
+      preload="auto"
+      data-setup='{"liveui":"true","preferFullWindow":"true","autoplay":"true"}'>
+      <source src="https://212.102.60.10/FOX_Sports_1/index.m3u8" type="application/x-mpegurl" />
+    </video>
     </div>
     <span class="spinner">
       <svg viewBox="22 22 44 44">
@@ -66,6 +75,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <script src="./js/games.js"></script>
     <script src="./js/index.js"></script>
+    <script src="https://vjs.zencdn.net/8.17.4/video.min.js"></script>
 </script>
 </script>
   </body>
