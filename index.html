@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      #myButton {
+        color: #000000;
+        background-color: #17ff8e;
+        font-size: 19px;
+        border-radius: 15px;
+        padding: 15px 50px;
+        cursor: pointer
+      }
+      #myButton:hover {
+        color: #ffffff;
+      }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.4.0/tsparticles.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/preset-stars@3/tsparticles.preset.stars.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
@@ -34,10 +47,14 @@
     <hr style="width: 95%;height:3px;color:#17ff8e;background-color:#17ff8e;border-style: none;"> 
     <div id="topgames" class="games">
     </div>
-    <hr style="width: 95%;height:3px;color:#17ff8e;background-color:#17ff8e;border-style: none;"> 
+    <hr style="width: 95%;height:3px;color:#17ff8e;background-color:#17ff8e;border-style: none;">
+    <center><button type="button" id="myButton"><a href="#iptv">Live TV</a></button></center>
+    <hr style="width: 95%;height:3px;color:#17ff8e;background-color:#17ff8e;border-style: none;">
     <center><h2>Games A-Z</h2></center>
     </div>
     <div id="games" class="games">
+    </div>
+    <div id="iptv">
     </div>
     <span class="spinner">
       <svg viewBox="22 22 44 44">
@@ -49,7 +66,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
     <script src="./js/games.js"></script>
     <script src="./js/index.js"></script>
-    <script defer id="site-behaviour-script" data-secret="3d489a20-d815-4e9a-973f-4f36fc0cc26f" src="https://sitebehaviour-cdn.fra1.cdn.digitaloceanspaces.com/index.min.js">
 </script>
 </script>
   </body>
