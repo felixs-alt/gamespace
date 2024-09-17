@@ -28,7 +28,7 @@
 
 // Overall, this code is part of a larger web page that implements various functionalities, including theme handling, custom elements, and secret themes.
 
-
+var player = videojs('player');
 const jsdelivr = document.createElement("script");
 jsdelivr.setAttribute("src", "./js/main.js");
 document.head.append(jsdelivr);
@@ -283,11 +283,21 @@ document.addEventListener("keydown", function (e) {
 $.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?modify&proxyUrl=https://thetvapp.to/json/219.json",function(json){
   var text = ""
   json.forEach(function(a){
-    text = text + "|                   |" + new Date(a.startTime).toLocaleTimeString('en-US') +"-"+ new Date(a.endTime).toLocaleTimeString('en-US')+" : "+a.title
+    text = text + "|" + new Date(a.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title + "|                   "
   })
   Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
     tv.innerHTML=text
   })
 })
+player.ready(function() {
+  var promise = player.play();
 
+  if (promise !== undefined) {
+    promise.then(function() {
+      // Autoplay started!
+    }).catch(function(error) {
+      // Autoplay was prevented.
+    });
+  }
+});
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
