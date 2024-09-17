@@ -280,7 +280,7 @@ document.addEventListener("keydown", function (e) {
     }
   });
 })();
-$.getJSON("https://thetvapp.to/json/219.json",function(json){
+$.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?modify&proxyUrl=https://thetvapp.to/json/219.json",function(json){
   var text
   json.forEach(function(a){
     text = text + " | " + new Date(a.startTime).toLocaleTimeString('it-IT') +"-"+ new Date(a.endTime).toLocaleTimeString('it-IT')+" : "+a.title
