@@ -280,4 +280,14 @@ document.addEventListener("keydown", function (e) {
     }
   });
 })();
+$.getJSON("https://thetvapp.to/json/219.json",function(json){
+  var text
+  json.forEach(function(a){
+    text = text + " | " + new Date(a.startTime).toLocaleTimeString('it-IT') +"-"+ new Date(a.endTime).toLocaleTimeString('it-IT')+" : "+a.title
+  })
+  Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
+    tv.innerHTML=text
+  })
+})
+
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
