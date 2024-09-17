@@ -281,9 +281,9 @@ document.addEventListener("keydown", function (e) {
   });
 })();
 $.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?modify&proxyUrl=https://thetvapp.to/json/219.json",function(json){
-  var text
+  var text = ""
   json.forEach(function(a){
-    text = text + " | " + new Date(a.startTime).toLocaleTimeString('it-IT') +"-"+ new Date(a.endTime).toLocaleTimeString('it-IT')+" : "+a.title
+    text = text + "|                   |" + new Date(a.startTime).toLocaleTimeString('en-US') +"-"+ new Date(a.endTime).toLocaleTimeString('en-US')+" : "+a.title
   })
   Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
     tv.innerHTML=text
