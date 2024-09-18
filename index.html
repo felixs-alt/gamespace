@@ -18,7 +18,8 @@
         white-space: nowrap;
         overflow: hidden;
         background-color: #000000;
-        border: solid, #17ff8e;
+        border-top: #17ff8e,solid;
+        border-bottom: #17ff8e,solid;
         color:#000000;
         width: 100%;
         font-family: 'Open Sans', sans-serif;
@@ -54,7 +55,14 @@
   </head>
   <body style="background-color: #1c1c1c;">
     <div style="z-index: -10;" id="tsparticles"></div>
-    <center><a href="#iptv"><marquee class="iptv-text"></marquee></a></center>
+    <center><a href="#iptv">
+      <div class="marquee iptv-text">
+      <div class="track">
+        <div class="content">
+
+        </div>
+      </div>
+    </div></a></center>
     <center>
       <header><img src="./images/banner.png" width="680" height="140" style="padding-top: 2%;user-select: none;"/></header>
       <input autocomplete="off" onkeyup="searchGames(this.value.trim().toLowerCase())" class="searchbar" placeholder="Search"/>
