@@ -21,10 +21,12 @@
         border-top: #17ff8e,solid,2px;
         border-bottom: #17ff8e,solid,2px;
         color:#000000;
-        width: 100%;
+        width: 50%;
       }
 
       .track {
+        border-top: #17ff8e,solid,2px;
+        border-bottom: #17ff8e,solid,2px;
         position: absolute;
         justify-content: space-between;
         white-space: nowrap;
@@ -64,11 +66,7 @@
   </head>
   <body style="background-color: #1c1c1c;">
     <div style="z-index: -10;" id="tsparticles"></div>
-    <center><a href="#iptv">
-    <div class="marquee iptv-text">
-      <div class="track">
-      </div>
-    </div></a></center>
+    <center><a href="#iptv"><div class="marquee iptv-text"><div class="track"></div></div></a></center>
     <center>
       <header><img src="./images/banner.png" width="680" height="140" style="padding-top: 2%;user-select: none;"/></header>
       <input autocomplete="off" onkeyup="searchGames(this.value.trim().toLowerCase())" class="searchbar" placeholder="Search"/>
@@ -93,7 +91,7 @@
     <div id="games" class="games">
     </div>
     <div id="iptv">
-    <center><a href="#iptv"><marquee class="iptv-text"></marquee></a></center>
+      <center><a href="#iptv"><div class="marquee iptv-text"><div class="track"></div></div></a></center>
     <center><a href="https://thetvapp.to/"><img src="https://thetvapp.to/img/TheTVApp.svg"></a></center>
     <center><h2 id="curr">Loading...</h2></center>
     <center>
