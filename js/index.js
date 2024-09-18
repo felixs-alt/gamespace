@@ -286,6 +286,7 @@ document.addEventListener("keydown", function (e) {
     document.getElementById("curr").innerHTML = " Currently playing until "+ new Date(a.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title+ " " +a.episodeTitle
     var text = ""
     json.forEach(function(a){
+      console.log(a.startTime)
       text = text + "|" + new Date(a.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title + "|                   "
     })
     Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
