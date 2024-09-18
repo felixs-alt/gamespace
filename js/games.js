@@ -5,7 +5,8 @@ function searchGames(query) {
   for (let game in gamesElement.children) {
     if (gamesElement.children[game] instanceof Element) {
       if (query) {
-        document.getElementById("weekly").setAttribute("hidden", "");
+        document.getElementById("weekly").setAttribute("hidden");
+        document.getElementById("iptv").setAttribute("hidden", "");
         var gameName = gamesElement.children[game].querySelector(".game-text").innerText.trim().toLowerCase();
         if (gameName.includes(query)) {
           gamesElement.children[game].removeAttribute("hidden");
@@ -14,6 +15,7 @@ function searchGames(query) {
         }
       } else {
         document.getElementById("weekly").removeAttribute("hidden");
+        document.getElementById("iptv").removeAttribute("hidden");
         gamesElement.children[game].removeAttribute("hidden");
       }
     }
