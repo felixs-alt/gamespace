@@ -282,9 +282,6 @@ document.addEventListener("keydown", function (e) {
 })();
 (function(){
   $.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?modify&proxyUrl=https://thetvapp.to/json/219.json",function(json){
-    var a = json[0]
-    
-    var text = ""
     json.forEach(function(a){
       if (a.endTime * 1000 > Date.now()) {
         if (a.startTime * 1000 < Date.now()) {
@@ -293,7 +290,7 @@ document.addEventListener("keydown", function (e) {
         var elem = document.createElement("div")
         elem.classList = "iptv-div"
         elem.innerHTML = new Date(a.startTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
-        Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
+        Array.from(document.getElementsByClassName("content")).forEach(function(tv) {
           tv.appendChild(elem)
         })
       }
