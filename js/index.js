@@ -283,11 +283,15 @@ document.addEventListener("keydown", function (e) {
 (function(){
   $.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?modify&proxyUrl=https://thetvapp.to/json/219.json",function(json){
     var a = json[0]
-    document.getElementById("curr").innerHTML = " Currently playing until "+ new Date(a.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title+ " " +a.episodeTitle
+    
     var text = ""
     json.forEach(function(a){
-      console.log(a.startTime)
-      text = text + "|" + new Date(a.startTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title + "|                   "
+      if (a.endTime * 1000 > Date.now()) {
+        if (a.startTime * 1000 < Date.now()) {
+          document.getElementById("curr").innerHTML = " Currently playing until "+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
+        }
+        text = text + "|" + new Date(a.startTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title + "|                   "
+      }
     })
     Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
       tv.innerHTML=text
