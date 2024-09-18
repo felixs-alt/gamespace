@@ -289,7 +289,7 @@ document.addEventListener("keydown", function (e) {
         }
         var elem = document.createElement("div")
         elem.classList = "iptv-div"
-        elem.innerHTML = new Date(a.startTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
+        elem.innerHTML = "&nbsp;"+new Date(a.startTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
         Array.from(document.getElementsByClassName("content")).forEach(function(tv) {
           tv.appendChild(elem)
         })
