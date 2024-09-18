@@ -15,12 +15,13 @@
         color: #ffffff;
       }
       .iptv-text {
+        position: relative;
         white-space: nowrap;
         overflow-x:hidden;
         border-top: #17ff8e,solid,2px;
         border-bottom: #17ff8e,solid,2px;
         color:#000000;
-        width: 50%;
+        width: 100%;
       }
 
       .track {
@@ -36,7 +37,7 @@
 
       @keyframes marquee {
         from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
+        to { transform: translateX(-100%); }
       }
       .content {
         display: inline-block;
