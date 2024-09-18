@@ -29,12 +29,12 @@
         justify-content: space-between;
         white-space: nowrap;
         will-change: transform;
-        animation: marquee ease-in-out infinite;
+        animation: marquee 32s linear infinite;
       }
 
       @keyframes marquee {
         from { transform: translateX(0); }
-        to { transform: translateX(-50%); }
+        to { transform: translateX(-100%); }
       }
       .content {
         display: inline-block;
