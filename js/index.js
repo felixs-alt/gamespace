@@ -287,10 +287,10 @@ document.addEventListener("keydown", function (e) {
         if (a.startTime * 1000 < Date.now()) {
           document.getElementById("curr").innerHTML = " Currently playing until "+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
         }
-        var elem = document.createElement("div")
-        elem.classList = "iptv-div"
+        var elem = document.createElement("span")
+        elem.classList = "content"
         elem.innerHTML = "&nbsp;"+new Date(a.startTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
-        Array.from(document.getElementsByClassName("content")).forEach(function(tv) {
+        Array.from(document.getElementsByClassName("track")).forEach(function(tv) {
           tv.appendChild(elem)
         })
       }
