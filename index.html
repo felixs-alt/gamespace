@@ -15,23 +15,13 @@
         color: #ffffff;
       }
       .iptv-text {
+        overflow-x: hidden;
         white-space: nowrap;
         overflow: hidden;
-        background-color: #000000;
-        border-top: #17ff8e,solid;
-        border-bottom: #17ff8e,solid;
+        border-top: #17ff8e,solid,2px;
+        border-bottom: #17ff8e,solid,2px;
         color:#000000;
         width: 100%;
-        font-family: 'Open Sans', sans-serif;
-        font-size:large;
-        font-smooth: never;
-        -webkit-font-smoothing : none;
-
-      }
-      .marquee {
-        position: relative;
-        height: 200px;
-        overflow-x: hidden;
       }
 
       .track {
@@ -39,7 +29,7 @@
         justify-content: space-between;
         white-space: nowrap;
         will-change: transform;
-        animation: marquee 32s linear infinite;
+        animation: marquee ease-in-out infinite;
       }
 
       @keyframes marquee {
@@ -49,6 +39,7 @@
       .content {
         display: inline-block;
         background-color: #17ff8e;
+        border-radius: 3px;
         color: #000000;
       }
       .video-js {
