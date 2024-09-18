@@ -287,7 +287,7 @@ document.addEventListener("keydown", function (e) {
     var text = ""
     json.forEach(function(a){
       console.log(a.startTime)
-      text = text + "|" + new Date(a.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title + "|                   "
+      text = text + "|" + new Date(a.startTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title + "|                   "
     })
     Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
       tv.innerHTML=text
