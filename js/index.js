@@ -280,24 +280,17 @@ document.addEventListener("keydown", function (e) {
     }
   });
 })();
-$.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?modify&proxyUrl=https://thetvapp.to/json/219.json",function(json){
-  var text = ""
-  json.forEach(function(a){
-    text = text + "|" + new Date(a.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title + "|                   "
+(function(){
+  $.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?modify&proxyUrl=https://thetvapp.to/json/219.json",function(json){
+    document.getElementById("curr").innerHTML = " CURRENTLY PLAYING: Now -"+ new Date(a.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title+ " " +a.episodeTitle
+    var text = ""
+    json.forEach(function(a){
+      text = text + "|" + new Date(a.startTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title + "|                   "
+    })
+    Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
+      tv.innerHTML=text
+    })
   })
-  Array.from(document.getElementsByClassName("iptv-text")).forEach(function(tv) {
-    tv.innerHTML=text
-  })
-})
-player.ready(function() {
-  var promise = player.play();
-
-  if (promise !== undefined) {
-    promise.then(function() {
-      // Autoplay started!
-    }).catch(function(error) {
-      // Autoplay was prevented.
-    });
-  }
-});
+  setTimeout(arguments.callee, 60000);
+})();
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
