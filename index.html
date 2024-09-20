@@ -14,28 +14,28 @@
       #myButton:hover {
         color: #ffffff;
       }
-.marquee {
-  border-top: solid;
-  border-bottom: solid;
-  border-width: 2px;
-  border-color:#17ff8e;
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 19px;
-  overflow: hidden;
-}
+      .marquee {
+        border-top: solid;
+        border-bottom: solid;
+        border-width: 2px;
+        border-color:#17ff8e;
+        position: relative;
+        width: 100vw;
+        max-width: 100%;
+        height: 19px;
+        overflow: hidden;
+      }
 
-.track {
-  position: absolute;
-  white-space: nowrap;
-  will-change: transform;
-  animation: marquee 50s linear infinite;
-}
+      .track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 50s linear infinite;
+      }
 
-@keyframes marquee {
-  to { transform: translateX(-50%); }
-}
+      @keyframes marquee {
+        to { transform: translateX(-50%); }
+      }
 
       .content {
         display: inline-block;
@@ -101,7 +101,7 @@
       preload="none"
       width="720"
       height="480"
-      data-setup='{"liveui":"true","preferFullWindow":"true","autoplay":"true"}'>
+      data-setup='{"liveui":"true"}'>
       <source src="https://212.102.60.10/FOX_Sports_1/index.m3u8" type="application/x-mpegurl" />
       </video>
     </center>
