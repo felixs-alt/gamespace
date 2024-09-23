@@ -1813,5 +1813,10 @@
     "name": "Pokemon Glazed",
     "url": "https://felixs-alt.github.io/webretro/?core=mgba&rom=https://files.catbox.moe/y5dqqx.gba",
     "img": "https://static.wikia.nocookie.net/fanmadepokemonglazed/images/9/94/Glazed_Box_Art.png"
-  }
+  },
+    {
+    "name": "Eaglercraft",
+    "url": "https://felixs-alt.github.io/eaglr/",
+    "img": "https://felixs-alt.github.io/eaglr/favicon.png"
+  },
 ]
