@@ -1818,5 +1818,10 @@
     "name": "Eaglercraft",
     "url": "https://felixs-alt.github.io/eaglr/",
     "img": "https://felixs-alt.github.io/eaglr/favicon.png"
+  },
+  {
+    "name": "Beer Strip",
+    "url": "https://felixs-alt.github.io/ruffle/?swf=https://s1.oyuncubey.com/swf/BeerStrip.swf",
+    "img": "https://m.exophase.com/steam/games/o/77e3eb5.png"
   }
 ]
