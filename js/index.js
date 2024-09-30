@@ -281,7 +281,7 @@ document.addEventListener("keydown", function (e) {
   });
 })();
 (function(){
-  $.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?modify&proxyUrl=https://thetvapp.to/json/219.json",function(json){
+  $.getJSON("https://billowing-king-7a80.felix-goff.workers.dev/proxy?destination=https://thetvapp.to/json/219.json",function(json){
     json.forEach(function(a){
       if (a.endTime * 1000 > Date.now()) {
         if (a.startTime * 1000 < Date.now()) {
