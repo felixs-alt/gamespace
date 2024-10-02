@@ -21,7 +21,7 @@ function searchGames(query) {
     }
   }
 
-  if (document.querySelectorAll(".game:not([hidden])").length == 0) {
+  if (document.querySelectorAll(".outline:not([hidden])").length == 5) {
     document.querySelector(".nogames").style.display = "initial";
   } else {
     document.querySelector(".nogames").style.display = "none";
