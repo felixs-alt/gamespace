@@ -28,7 +28,7 @@
 
 // Overall, this code is part of a larger web page that implements various functionalities, including theme handling, custom elements, and secret themes.
 
-var player = videojs('player');
+var player = videojs('some-player-id', {liveui: true});
 const jsdelivr = document.createElement("script");
 jsdelivr.setAttribute("src", "./js/main.js");
 document.head.append(jsdelivr);
@@ -298,4 +298,5 @@ document.addEventListener("keydown", function (e) {
   })
   setTimeout(arguments.callee, 60000);
 })();
+
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
