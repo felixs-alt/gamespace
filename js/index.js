@@ -284,7 +284,7 @@ document.addEventListener("keydown", function (e) {
     json.forEach(function(a){
       if (a.endTime * 1000 > Date.now()) {
         if (a.startTime * 1000 < Date.now()) {
-          document.getElementById("curr").innerHTML = " Currently playing until "+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
+          document.getElementById("curr").innerHTML = " Currently Playing On Fox Until "+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
         }
         var elem = document.createElement("span")
         elem.classList = "content"
@@ -297,5 +297,182 @@ document.addEventListener("keydown", function (e) {
   })
   setTimeout(arguments.callee, 60000);
 })();
+    // Define an array to store all playlist it
+    let playlistItems = [];
+    window.player = null;
+    document.addEventListener("DOMContentLoaded", function () {
+          const videoPlayer = document.getElementById("player");
+          const playlist = document.getElementById("playlist");
+          const billedMsgElement = document.getElementById("billedMsg");
+          const searchInput = document.getElementById("searchInput");
+              fetch("index.m3u")
+                  .then(response => response.text())
+                  .then(data => {
+                      videoPlayer.innerHTML = ''; // Clear the video player
+                      clearPlaylist(); // clear channel list
+
+                      data = trimLineBreak(data);
+                      const blocks = data.split('\n\n');
+                      let tvgName = '';
+                      let tvgLogo = '';
+                      let billedMsg = 'Fox Sports 1';
+                      for (let i = 0; i < blocks.length; i++) {
+                          var items = [];
+                          var lines = blocks[i].split('\n');
+
+                          items[i] = { 'key': '', 'tvgName': '', 'tvgLogo': '', 'source': '' };
+                          for (let j = 0; j < lines.length; j++) {
+                              const line = lines[j].trim();
+                            
+
+                              // Check if it's an EXTINF line with tvg-name and tvg-logo
+                              if (line.startsWith("#EXTINF:")) {
+                                  const tvgNameMatch = line.match(/tvg-name="([^"]+)"/);
+                                  if (tvgNameMatch) {
+                                      tvgName = tvgNameMatch[1];
+                                  } else {
+                                      // Extract the last string after the last comma as tvg-name
+                                      var lastCommaIndex = line.lastIndexOf(",");
+                                      if (lastCommaIndex !== -1) {
+                                          tvgName = line.substring(lastCommaIndex + 1).trim();
+                                      } else {
+                                          tvgName = `Stream ${j + 1}`;
+                                      }   
+                                  }
+
+                                  const tvgLogoMatch = line.match(/tvg-logo="([^"]+)"/);
+                                  if (tvgLogoMatch) {
+                                      tvgLogo = tvgLogoMatch[1];
+                                  }
+
+                                  items[i]['tvgName'] = tvgName;
+                                  items[i]['tvgLogo'] = convertToHttps(tvgLogo);
+                              }
+
+                              // Check if the line is not empty and not a comment
+                              if (line.length > 0 && !line.startsWith("#")) {
+                                  items[i]['source'] = convertToHttps(line);
+                              }
+                          }
+
+                          if(items.length > 0) {
+                              items = reorderIndexes(items);
+                              if(items[0].source != null && items[0].source != '') {
+                                  playlistItems.push(items);
+                              }
+                          }
+                      }
+
+                      // Render the playlist
+                      renderPlaylist(playlistItems);
+
+                      if(document.getElementsByClassName('channel').length > 0) {
+                          playlist.classList.remove("d-none");
+                      } else {
+                          playlist.classList.add("d-none");
+                      }
+
+                      if(billedMsg != '') {
+                          billedMsgElement.textContent = billedMsg;
+                          billedMsgElement.classList.remove("d-none");
+                      } else {
+                          billedMsgElement.classList.add("d-none");
+                      }
+                  })
+                  .catch(error => {
+                      console.error("Error loading the M3U file:", error);
+                  });
+          });
+
+          // Search input event listener
+          searchInput.addEventListener("input", () => {
+              const searchText = searchInput.value.trim().toLowerCase();
+
+              // Filter playlist items based on search input
+              const filteredItems = playlistItems.filter(item => {
+              return item[0].tvgName.toLowerCase().includes(searchText);
+              });
+
+              // Render the filtered playlist
+              clearPlaylist(false);
+              renderPlaylist(filteredItems);
+          });
+
+          // Function to render the playlist
+          function renderPlaylist(items) {
+            console.log(items)
+              items.forEach((item, index) => {
+                console.log(index)
+                  const playlistItem = document.createElement("img");
+                  playlistItem.className = "channel";
+                  playlistItem.innerText = item[0].tvgName
+                  playlistItem.src = item[0].tvgLogo;
+
+                  playlistItem.addEventListener("click", async () => {
+                      // If a player instance exists, destroy it before creating a new one
+                      if(player != null){
+                        player.dispose();
+                      }
+                      console.log(player)
+                      // Init Shaka Player
+                      var player = videojs('player', {liveui: true,poster: item[0].tvgLogo,preload: "none"});
+
+                      player.src({type: "application/x-mpegurl", src: item[0].source});
+                      player.ready(function(){
+                        this.play()
+                      })
+                      billedMsg=item[0].tvgName
+                  });
+                  if(item[0].tvgName == "Fox Sports 1"){
+                    playlistItem.dispatchEvent(new Event("click"))
+                  }
+
+                  playlist.appendChild(playlistItem);
+              });
+          }
+      function clearPlaylist(clearItems = true) {
+          // Clear the existing playlist items
+          if(clearItems) {
+              playlistItems = [];
+          }
+          
+          const playlistItemsElem = playlist.querySelectorAll('.channel');
+          playlistItemsElem.forEach(item => item.remove());
+      }
+
+      function trimLineBreak(text) {
+          // Replace multiple line breaks with a single line break
+          return text.replace(/[\r\n]{2,}/g, '\n\n');
+      }
+
+      function reorderIndexes(items) {
+          let rearrangedItems = [];
+
+          items.forEach(item => {
+              if (item !== undefined) {
+                  rearrangedItems.push(item);
+              }
+          });
+
+          return rearrangedItems;
+      }
+
+      function base64ToHex(base64) {
+          if (base64.length > 0) {
+              const binary = atob(base64);
+              let hex = '';
+              for (let i = 0; i < binary.length; i++) {
+                  let char = binary.charCodeAt(i).toString(16);
+                  hex += (char.length === 1 ? '0' : '') + char;
+              }
+              return hex;
+          }
+          return base64;
+      }
+
+      function convertToHttps(url) {
+          return url.replace(/^http:/, 'https:');
+      }
+
 
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
