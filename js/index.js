@@ -304,7 +304,6 @@ document.addEventListener("keydown", function (e) {
           const videoPlayer = document.getElementById("player");
           const playlist = document.getElementById("playlist");
           const billedMsgElement = document.getElementById("billedMsg");
-          const searchInput = document.getElementById("searchInput");
               fetch("index.m3u")
                   .then(response => response.text())
                   .then(data => {
@@ -382,20 +381,6 @@ document.addEventListener("keydown", function (e) {
                   .catch(error => {
                       console.error("Error loading the M3U file:", error);
                   });
-          });
-
-          // Search input event listener
-          searchInput.addEventListener("input", () => {
-              const searchText = searchInput.value.trim().toLowerCase();
-
-              // Filter playlist items based on search input
-              const filteredItems = playlistItems.filter(item => {
-              return item[0].tvgName.toLowerCase().includes(searchText);
-              });
-
-              // Render the filtered playlist
-              clearPlaylist(false);
-              renderPlaylist(filteredItems);
           });
 
           // Function to render the playlist

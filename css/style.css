@@ -236,19 +236,6 @@ footer {
   color: var(--text-secondary);
   max-width: calc(100% - 4rem);
 }
-.search-bar {
-  height: 40px;
-  border: none;
-  background: var(--theme);
-  outline: none;
-  font-size: 1rem;
-  border-radius: 15px;
-  padding: 0 15px;
-  margin: 1rem;
-  width: 40rem;
-  color: var(--text-secondary);
-  max-width: calc(100% - 4rem);
-}
 
 .games {
   display: grid;
@@ -640,7 +627,7 @@ input[type="color"] {
   height: 100%;
   object-fit: contain;
   border-radius: 30px;
-  background: radial-gradient(circle, rgba(169, 169, 169, 1) 0%, rgba(169, 169, 169, 0.5) 100%);
+  background: radial-gradient(circle, rgb(111, 111, 111) 0%, rgba(111, 111, 111, 0.5) 100%);
   border: #17ff8e,solid,1px;
 } 
 /* Apply subtle glow effect on hover */

@@ -6,13 +6,13 @@ https://moveonjoy.fly.dev/Animal_Planet/index.m3u8
 #EXTINF:-1 tvg-id="BBCWorldNews.us" tvg-name="BBC World News" tvg-logo="https://c.files.bbci.co.uk/16B26/production/_96566929_bbc_wn_rgb.png",BBC World News
 https://moveonjoy.fly.dev/BBC_WORLD_NEWS/index.m3u8
 
-#EXTINF:-1 tvg-id="Bravo.us" tvg-name="BRAVO" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bravo_2017_logo.svg/1200px-Bravo_2017_logo.svg.png",Bravo
+#EXTINF:-1 tvg-id="Bravo.us" tvg-name="BRAVO" tvg-logo="https://r1.hiclipart.com/path/970/810/410/qendop4gi9u6rfpkn4kms6opb9-2ac38cd053d9bbf070cca36d93c3287e.png?dl=1",Bravo
 https://moveonjoy.fly.dev/BRAVO/index.m3u8
 
 #EXTINF:-1 tvg-id="CartoonNetwork.us" tvg-name="Cartoon Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/1200px-Cartoon_Network_2010_logo.svg.png",Cartoon Network
 https://moveonjoy.fly.dev/CARTOON_NETWORK/index.m3u8
 
-#EXTINF:-1 tvg-id="CBSSportsNetwork.us" tvg-name="CBS Sports Network" tvg-logo="https://sports.cbsimg.net/images/cbss/ui5/cbssportsv2_200x200.png",CBS Sports Network
+#EXTINF:-1 tvg-id="CBSSportsNetwork.us" tvg-name="CBS Sports Network" tvg-logo="https://seeklogo.com/images/C/cbs-sports-logo-5DF461F39C-seeklogo.com.png",CBS Sports Network
 https://moveonjoy.fly.dev/CBS_SPORTS_NETWORK/index.m3u8
 
 #EXTINF:-1 tvg-id="CNBC.us" tvg-name="CNBC" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/db/CNBC_2023.svg" group-title="Live Channels",CNBC
@@ -24,9 +24,6 @@ https://moveonjoy.fly.dev/CNN/index.m3u8
 #EXTINF:-1 tvg-id="DisneyXD.us" tvg-name="Disney XD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Disney_XD_-_2015.svg/800px-Disney_XD_-_2015.svg.png",DisneyXD
 https://moveonjoy.fly.dev/DISNEY_XD/index.m3u8
 
-#EXTINF:-1 tvg-id="ESPNEWS.us" tvg-name="ESPN News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ESPNews.svg/2560px-ESPNews.svg.png",ESPNews
-https://moveonjoy.fly.dev/ESPN_NEWS/index.m3u8
-
 #EXTINF:-1 tvg-id="ESPNU.us" tvg-name="ESPN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/ESPN_U_logo.svg/1200px-ESPN_U_logo.svg.png",ESPN U
 https://moveonjoy.fly.dev/ESPN_U/index.m3u8
 
@@ -36,11 +33,8 @@ https://moveonjoy.fly.dev/ESPN_2/index.m3u8
 #EXTINF:-1 tvg-id="FoodNetwork.us" tvg-name="Food Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Food_Network_logo.svg/640px-Food_Network_logo.svg.png",Food Network
 https://moveonjoy.fly.dev/FOOD_NETWORK/index.m3u8
 
-#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-name="FOX News Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/512px-Fox_News_Channel_logo.svg.png" group-title="Live Channels",FOX News Channel
+#EXTINF:-1 tvg-id="FoxNewsChannel.us" tvg-name="FOX News Channel" tvg-logo="https://www.hatchwise.com/wp-content/uploads/2023/08/Fox-News-Channel-Emblem-1024x576.png" group-title="Live Channels",FOX News Channel
 https://moveonjoy.fly.dev/FOX_News_Channel/index.m3u8
-
-#EXTINF:-1 tvg-id="FoxSoccerPlus.us" tvg-name="FOX_SOCCER_PLUS" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/Fox_Soccer_Plus_logo.svg/1200px-Fox_Soccer_Plus_logo.svg.png" group-title="Live Channels",FOX Soccer Plus
-https://moveonjoy.fly.dev/FOX_SOCCER_PLUS/index.m3u8
 
 #EXTINF:-1 tvg-id="FoxSports1.us" tvg-name="Fox Sports 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/2015_Fox_Sports_1_logo.svg/1200px-2015_Fox_Sports_1_logo.svg.png" group-title="Live Channels",FS1
 https://moveonjoy.fly.dev/FOX_Sports_1/index.m3u8
