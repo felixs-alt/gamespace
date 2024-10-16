@@ -1,4 +1,4 @@
-#EXTM3U: billed-msg="deez nuts"
+#EXTM3U
 
 #EXTINF:-1 tvg-id="AnimalPlanet.us" tvg-name="Animal Planet" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/20/2018_Animal_Planet_logo.svg",Animal Planet
 https://moveonjoy.fly.dev/Animal_Planet/index.m3u8
@@ -75,10 +75,8 @@ https://moveonjoy.fly.dev/NICKELODEON/index.m3u8
 #EXTINF:-1 tvg-id="ParamountNetwork.us" tvg-name="Paramount Network" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/1200px-Paramount_Network.svg.png" group-title="Live Channels",Paramount Network East
 https://moveonjoy.fly.dev/PARAMOUNT_NETWORK/index.m3u8
 
-
 #EXTINF:-1 tvg-id="TennisChannel.us" tvg-name="Tennis Channel" tvg-logo="https://www.sportsvideo.org/wp-content/uploads/2016/01/2000px-Tennis_Channel_logo.svg_.png" group-title="Live Channels",Tennis Channel
 https://moveonjoy.fly.dev/TENNIS_CHANNEL/index.m3u8
-
 
 #EXTINF:-1 tvg-id="TLC.us" tvg-name="TLC East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/1200px-TLC_Logo.svg.png" group-title="Live Channels",TLC (The Learning Channel) East
 https://moveonjoy.fly.dev/TLC/index.m3u8
