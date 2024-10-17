@@ -303,7 +303,6 @@ document.addEventListener("keydown", function (e) {
     document.addEventListener("DOMContentLoaded", function () {
           const videoPlayer = document.getElementById("player");
           const playlist = document.getElementById("playlist");
-          const billedMsgElement = document.getElementById("billedMsg");
               fetch("index.m3u")
                   .then(response => response.text())
                   .then(data => {
@@ -370,13 +369,6 @@ document.addEventListener("keydown", function (e) {
                       } else {
                           playlist.classList.add("d-none");
                       }
-
-                      if(billedMsg != '') {
-                          billedMsgElement.textContent = billedMsg;
-                          billedMsgElement.classList.remove("d-none");
-                      } else {
-                          billedMsgElement.classList.add("d-none");
-                      }
                   })
                   .catch(error => {
                       console.error("Error loading the M3U file:", error);
@@ -385,6 +377,7 @@ document.addEventListener("keydown", function (e) {
 
           // Function to render the playlist
           function renderPlaylist(items) {
+            const billedMsgElement = document.getElementById("billedMsg");
             console.log(items)
               items.forEach((item, index) => {
                 console.log(index)
@@ -406,7 +399,8 @@ document.addEventListener("keydown", function (e) {
                       player.ready(function(){
                         this.play()
                       })
-                      billedMsg=item[0].tvgName
+                      billedMsgElement.textContent = item[0].tvgName
+                      billedMsgElement.classList.remove("d-none");
                   });
                   if(item[0].tvgName == "Fox Sports 1"){
                     playlistItem.dispatchEvent(new Event("click"))
