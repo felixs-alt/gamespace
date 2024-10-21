@@ -313,7 +313,6 @@ document.addEventListener("keydown", function (e) {
                       const blocks = data.split('\n\n');
                       let tvgName = '';
                       let tvgLogo = '';
-                      let billedMsg = 'Fox Sports 1';
                       for (let i = 0; i < blocks.length; i++) {
                           var items = [];
                           var lines = blocks[i].split('\n');
@@ -377,7 +376,6 @@ document.addEventListener("keydown", function (e) {
 
           // Function to render the playlist
           function renderPlaylist(items) {
-            const billedMsgElement = document.getElementById("billedMsg");
             console.log(items)
               items.forEach((item, index) => {
                 console.log(index)
@@ -399,8 +397,6 @@ document.addEventListener("keydown", function (e) {
                       player.ready(function(){
                         this.play()
                       })
-                      billedMsgElement.textContent = item[0].tvgName
-                      billedMsgElement.classList.remove("d-none");
                   });
                   if(item[0].tvgName == "Fox Sports 1"){
                     playlistItem.dispatchEvent(new Event("click"))
@@ -459,5 +455,8 @@ document.addEventListener("keydown", function (e) {
             document.getElementById("sidebar").style.width = "45%"; 
         }
     }
-
+    setInterval(async function() {
+      req = await fetch("https://gmspace-chat.fly.dev/api/users")
+      document.getElementById("billedMsg").innerHTML = String(req.text()+" Users Online")
+    },5000)
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
