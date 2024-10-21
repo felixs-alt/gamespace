@@ -452,6 +452,12 @@ document.addEventListener("keydown", function (e) {
       function convertToHttps(url) {
           return url.replace(/^http:/, 'https:');
       }
-
+      function Sidebar() {
+        if(document.getElementById("sidebar").style.width == "45%"){
+            document.getElementById("sidebar").style.width = "0";
+        } else {
+            document.getElementById("sidebar").style.width = "45%"; 
+        }
+    }
 
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
