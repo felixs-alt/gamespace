@@ -462,7 +462,12 @@ document.addEventListener("keydown", function (e) {
             document.getElementById("sidebar").style.width = "45%"; 
         }
     }
-    const socket = io();
+    fetch("https://gmspace-chat.fly.dev/api/users")
+      .then(res => res.text())
+      .then(users => function() {
+        document.getElementById("billedMsg").innerHTML = String(users+" Users Online")
+      })
+    const socket = io('https://gmspace-chat.fly.dev');
     socket.on('user-count-change', function (userCount) {
       console.log(userCount);
       document.getElementById("billedMsg").innerHTML = String(userCount+" Users Online")
