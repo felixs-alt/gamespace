@@ -462,43 +462,10 @@ document.addEventListener("keydown", function (e) {
             document.getElementById("sidebar").style.width = "45%"; 
         }
     }
-    const ws = new WebSocket("wss://gmspace-chat.fly.dev:2929")
-    const username = document.getElementById("username")
-    if(localStorage.id){
-        username.value = localStorage.id
-    }
-
-    document.getElementById("sendmag").onclick = sendMessge
-    document.getElementById("msg").onkeydown = async function(e){
-        if(e.key == "Enter"){
-            sendMessge()
-        }
-    }
-    async function sendMessge(){
-        const msg = document.getElementById("msg").value
-        if (msg == "") {
-            return
-        }
-        var id = ""
-        if(username.value == "") {
-            id = "Anon"
-        } else {
-            localStorage.id = username.value
-            id = username.value
-        }
-        ws.send(String("("+id+") "+msg))
-        document.getElementById("msg").value = ""
-    }
-    ws.onmessage = function(msg){
-        msg = new Date().toLocaleTimeString("en-GB",{hour: "numeric",minute: "2-digit"})+" | "+msg.data+"\n"
-        document.getElementById("res").innerHTML+=msg
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-    ws.onopen = () => {
-        setInterval(async() => {
-            ws.send("ping")
-            req = await fetch("https://gmspace-chat.fly.dev/api/users")
-            document.getElementById("billedMsg").innerHTML = String(await req.text()+" Users Online")
-        }, 3000);
+    updateUserlist()
+    setInterval(updateUserlist,2000)
+    async function updateUserlist() {
+      req = await fetch("https://gmspace-chat.fly.dev/api/users")
+      document.getElementById("billedMsg").innerHTML = String(await req.text()+" Users Online")
     }
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
