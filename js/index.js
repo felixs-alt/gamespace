@@ -463,7 +463,7 @@ document.addEventListener("keydown", function (e) {
         }
     }
     updateUserlist()
-    setInterval(updateUserlist,5000)
+    setInterval(updateUserlist,2000)
     async function updateUserlist() {
       req = await fetch("https://gmspace-chat.fly.dev/api/users")
       document.getElementById("billedMsg").innerHTML = String(await req.text()+" Users Online")
