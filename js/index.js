@@ -399,7 +399,14 @@ document.addEventListener("keydown", function (e) {
                       })
                   });
                   if(item[0].tvgName == "Fox Sports 1"){
-                    playlistItem.dispatchEvent(new Event("click"))
+                    if(player != null){
+                      player.dispose();
+                    }
+                    console.log(player)
+                    // Init Shaka Player
+                    var player = videojs('player', {liveui: true,poster: item[0].tvgLogo,preload: "none"});
+
+                    player.src({type: "application/x-mpegurl", src: item[0].source});
                   }
 
                   playlist.appendChild(playlistItem);
@@ -457,6 +464,6 @@ document.addEventListener("keydown", function (e) {
     }
     setInterval(async function() {
       req = await fetch("https://gmspace-chat.fly.dev/api/users")
-      document.getElementById("billedMsg").innerHTML = String(req.text()+" Users Online")
+      document.getElementById("billedMsg").innerHTML = String(await req.text()+" Users Online")
     },5000)
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
