@@ -462,10 +462,9 @@ document.addEventListener("keydown", function (e) {
             document.getElementById("sidebar").style.width = "45%"; 
         }
     }
-    updateUserlist()
-    setInterval(updateUserlist,3000)
-    async function updateUserlist() {
-      req = await fetch("https://gmspace-chat.fly.dev/api/users")
-      document.getElementById("billedMsg").innerHTML = String(await req.text()+" Users Online")
-    }
+    const socket = io();
+    socket.on('user-count-change', function (userCount) {
+      console.log(userCount);
+      document.getElementById("billedMsg").innerHTML = String(userCount+" Users Online")
+    });
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
