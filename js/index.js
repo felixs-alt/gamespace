@@ -462,8 +462,10 @@ document.addEventListener("keydown", function (e) {
             document.getElementById("sidebar").style.width = "45%"; 
         }
     }
-    setInterval(async function() {
+    updateUserlist()
+    setInterval(updateUserlist,5000)
+    async function updateUserlist() {
       req = await fetch("https://gmspace-chat.fly.dev/api/users")
       document.getElementById("billedMsg").innerHTML = String(await req.text()+" Users Online")
-    },5000)
+    }
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
