@@ -636,17 +636,6 @@ input[type="color"] {
   transition: box-shadow 0.3s ease-in-out;
   cursor: pointer;
 }
-
-/* CSS for the billed message */
-.billed-msg {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background-color: #333;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
 .marquee {
 border-bottom: solid;
 border-width: 1px;
