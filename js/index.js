@@ -465,11 +465,11 @@ document.addEventListener("keydown", function (e) {
     fetch("https://gmspace-chat.fly.dev/api/users")
       .then(res => res.text())
       .then(users => function() {
-        document.getElementById("userCount").innerHTML = String(users+" Users Online")
+        document.getElementById("userCount").innerHTML = String(users+" User(s) Online")
       })
     const socket = io('https://gmspace-chat.fly.dev');
     socket.on('user-count-change', function (userCount) {
       console.log(userCount);
-      document.getElementById("userCount").innerHTML = String(userCount+" Users Online")
+      document.getElementById("userCount").innerHTML = String(userCount+" User(s) Online")
     });
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
