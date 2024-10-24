@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background: var(--background);
+  overflow-x: hidden;
 }
 
 @keyframes breathing {
@@ -706,4 +707,10 @@ border: solid, #17ff8e;
   height: 100%;
   border: none;
   overflow: hidden;
+}
+canvas{
+  position:fixed;
+  left:0;
+  top:0;
+  z-index:-1;
 }
