@@ -251,225 +251,159 @@ document.addEventListener("keydown", function (e) {
   }
 });
 }
-(async () => {
-  await loadStarsPreset(tsParticles);
-
-  tsParticles.load({
-    id: "tsparticles",
-    options: {
-      particles: {
-        number: {
-          value: 855,
-          density: {
-            enable: true,
-            value_area: 789.1476416322727
-          }
-        },
-        color: {
-          value: "#ffffff"
-        },
-        size: {
-          value: 1.3,
-        },
-        move: {
-          speed: 0.4,
-        }
-      },
-      preset: "stars"
-    }
-  });
-})();
-(function(){
-  $.getJSON("https://proxy.wyzie.ru/https://thetvapp.to/json/219.json",function(json){
-    json.forEach(function(a){
-      if (a.endTime * 1000 > Date.now()) {
-        if (a.startTime * 1000 < Date.now()) {
-          document.getElementById("curr").innerHTML = " Currently Playing On Fox Until "+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
-        }
-        var elem = document.createElement("span")
-        elem.classList = "content"
-        elem.innerHTML = "&nbsp;"+new Date(a.startTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" }) +"-"+ new Date(a.endTime * 1000).toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })+" : "+a.title
-        Array.from(document.getElementsByClassName("track")).forEach(function(tv) {
-          tv.appendChild(elem)
-        })
-      }
-    })
-  })
-  setTimeout(arguments.callee, 60000);
-})();
-    // Define an array to store all playlist it
-    let playlistItems = [];
-    window.player = null;
-    document.addEventListener("DOMContentLoaded", function () {
-          const videoPlayer = document.getElementById("player");
-          const playlist = document.getElementById("playlist");
-              fetch("index.m3u")
-                  .then(response => response.text())
-                  .then(data => {
-                      videoPlayer.innerHTML = ''; // Clear the video player
-                      clearPlaylist(); // clear channel list
-
-                      data = trimLineBreak(data);
-                      const blocks = data.split('\n\n');
-                      let tvgName = '';
-                      let tvgLogo = '';
-                      for (let i = 0; i < blocks.length; i++) {
-                          var items = [];
-                          var lines = blocks[i].split('\n');
-
-                          items[i] = { 'key': '', 'tvgName': '', 'tvgLogo': '', 'source': '' };
-                          for (let j = 0; j < lines.length; j++) {
-                              const line = lines[j].trim();
-                            
-
-                              // Check if it's an EXTINF line with tvg-name and tvg-logo
-                              if (line.startsWith("#EXTINF:")) {
-                                  const tvgNameMatch = line.match(/tvg-name="([^"]+)"/);
-                                  if (tvgNameMatch) {
-                                      tvgName = tvgNameMatch[1];
+// Define an array to store all playlist it
+let playlistItems = [];
+window.player = null;
+document.addEventListener("DOMContentLoaded", function () {
+      const videoPlayer = document.getElementById("player");
+      const playlist = document.getElementById("playlist");
+          fetch("index.m3u")
+              .then(response => response.text())
+              .then(data => {
+                  videoPlayer.innerHTML = ''; // Clear the video player
+                  clearPlaylist(); // clear channel list
+                  data = trimLineBreak(data);
+                  const blocks = data.split('\n\n');
+                  let tvgName = '';
+                  let tvgLogo = '';
+                  for (let i = 0; i < blocks.length; i++) {
+                      var items = [];
+                      var lines = blocks[i].split('\n');
+                      items[i] = { 'key': '', 'tvgName': '', 'tvgLogo': '', 'source': '' };
+                      for (let j = 0; j < lines.length; j++) {
+                          const line = lines[j].trim();
+                        
+                          // Check if it's an EXTINF line with tvg-name and tvg-logo
+                          if (line.startsWith("#EXTINF:")) {
+                              const tvgNameMatch = line.match(/tvg-name="([^"]+)"/);
+                              if (tvgNameMatch) {
+                                  tvgName = tvgNameMatch[1];
+                              } else {
+                                  // Extract the last string after the last comma as tvg-name
+                                  var lastCommaIndex = line.lastIndexOf(",");
+                                  if (lastCommaIndex !== -1) {
+                                      tvgName = line.substring(lastCommaIndex + 1).trim();
                                   } else {
-                                      // Extract the last string after the last comma as tvg-name
-                                      var lastCommaIndex = line.lastIndexOf(",");
-                                      if (lastCommaIndex !== -1) {
-                                          tvgName = line.substring(lastCommaIndex + 1).trim();
-                                      } else {
-                                          tvgName = `Stream ${j + 1}`;
-                                      }   
-                                  }
-
-                                  const tvgLogoMatch = line.match(/tvg-logo="([^"]+)"/);
-                                  if (tvgLogoMatch) {
-                                      tvgLogo = tvgLogoMatch[1];
-                                  }
-
-                                  items[i]['tvgName'] = tvgName;
-                                  items[i]['tvgLogo'] = convertToHttps(tvgLogo);
+                                      tvgName = `Stream ${j + 1}`;
+                                  }   
                               }
-
-                              // Check if the line is not empty and not a comment
-                              if (line.length > 0 && !line.startsWith("#")) {
-                                  items[i]['source'] = convertToHttps(line);
+                              const tvgLogoMatch = line.match(/tvg-logo="([^"]+)"/);
+                              if (tvgLogoMatch) {
+                                  tvgLogo = tvgLogoMatch[1];
                               }
+                              items[i]['tvgName'] = tvgName;
+                              items[i]['tvgLogo'] = convertToHttps(tvgLogo);
                           }
-
-                          if(items.length > 0) {
-                              items = reorderIndexes(items);
-                              if(items[0].source != null && items[0].source != '') {
-                                  playlistItems.push(items);
-                              }
+                          // Check if the line is not empty and not a comment
+                          if (line.length > 0 && !line.startsWith("#")) {
+                              items[i]['source'] = convertToHttps(line);
                           }
                       }
-
-                      // Render the playlist
-                      renderPlaylist(playlistItems);
-
-                      if(document.getElementsByClassName('channel').length > 0) {
-                          playlist.classList.remove("d-none");
-                      } else {
-                          playlist.classList.add("d-none");
+                      if(items.length > 0) {
+                          items = reorderIndexes(items);
+                          if(items[0].source != null && items[0].source != '') {
+                              playlistItems.push(items);
+                          }
                       }
-                  })
-                  .catch(error => {
-                      console.error("Error loading the M3U file:", error);
-                  });
-          });
-
-          // Function to render the playlist
-          function renderPlaylist(items) {
-            console.log(items)
-              items.forEach((item, index) => {
-                console.log(index)
-                  const playlistItem = document.createElement("img");
-                  playlistItem.className = "channel";
-                  playlistItem.innerText = item[0].tvgName
-                  playlistItem.src = item[0].tvgLogo;
-
-                  playlistItem.addEventListener("click", async () => {
-                      // If a player instance exists, destroy it before creating a new one
-                      if(player != null){
-                        player.dispose();
-                      }
-                      console.log(player)
-                      // Init Shaka Player
-                      var player = videojs('player', {liveui: true,poster: item[0].tvgLogo,preload: "none"});
-
-                      player.src({type: "application/x-mpegurl", src: item[0].source});
-                      player.ready(function(){
-                        this.play()
-                      })
-                  });
-                  if(item[0].tvgName == "Fox Sports 1"){
-                    if(player != null){
-                      player.dispose();
-                    }
-                    console.log(player)
-                    // Init Shaka Player
-                    var player = videojs('player', {liveui: true,poster: item[0].tvgLogo,preload: "none"});
-
-                    player.src({type: "application/x-mpegurl", src: item[0].source});
                   }
-
-                  playlist.appendChild(playlistItem);
+                  // Render the playlist
+                  renderPlaylist(playlistItems);
+                  if(document.getElementsByClassName('channel').length > 0) {
+                      playlist.classList.remove("d-none");
+                  } else {
+                      playlist.classList.add("d-none");
+                  }
+              })
+              .catch(error => {
+                  console.error("Error loading the M3U file:", error);
               });
-          }
-      function clearPlaylist(clearItems = true) {
-          // Clear the existing playlist items
-          if(clearItems) {
-              playlistItems = [];
-          }
-          
-          const playlistItemsElem = playlist.querySelectorAll('.channel');
-          playlistItemsElem.forEach(item => item.remove());
-      }
-
-      function trimLineBreak(text) {
-          // Replace multiple line breaks with a single line break
-          return text.replace(/[\r\n]{2,}/g, '\n\n');
-      }
-
-      function reorderIndexes(items) {
-          let rearrangedItems = [];
-
-          items.forEach(item => {
-              if (item !== undefined) {
-                  rearrangedItems.push(item);
+      });
+      // Function to render the playlist
+      function renderPlaylist(items) {
+        console.log(items)
+          items.forEach((item, index) => {
+            console.log(index)
+              const playlistItem = document.createElement("img");
+              playlistItem.className = "channel";
+              playlistItem.innerText = item[0].tvgName
+              playlistItem.src = item[0].tvgLogo;
+              playlistItem.addEventListener("click", async () => {
+                  // If a player instance exists, destroy it before creating a new one
+                  if(player != null){
+                    player.dispose();
+                  }
+                  console.log(player)
+                  // Init Shaka Player
+                  var player = videojs('player', {liveui: true,poster: item[0].tvgLogo,preload: "none"});
+                  player.src({type: "application/x-mpegurl", src: item[0].source});
+                  player.ready(function(){
+                    this.play()
+                  })
+              });
+              if(item[0].tvgName == "Fox Sports 1"){
+                if(player != null){
+                  player.dispose();
+                }
+                console.log(player)
+                // Init Shaka Player
+                var player = videojs('player', {liveui: true,poster: item[0].tvgLogo,preload: "none"});
+                player.src({type: "application/x-mpegurl", src: item[0].source});
               }
+              playlist.appendChild(playlistItem);
           });
-
-          return rearrangedItems;
       }
-
-      function base64ToHex(base64) {
-          if (base64.length > 0) {
-              const binary = atob(base64);
-              let hex = '';
-              for (let i = 0; i < binary.length; i++) {
-                  let char = binary.charCodeAt(i).toString(16);
-                  hex += (char.length === 1 ? '0' : '') + char;
-              }
-              return hex;
+  function clearPlaylist(clearItems = true) {
+      // Clear the existing playlist items
+      if(clearItems) {
+          playlistItems = [];
+      }
+      
+      const playlistItemsElem = playlist.querySelectorAll('.channel');
+      playlistItemsElem.forEach(item => item.remove());
+  }
+  function trimLineBreak(text) {
+      // Replace multiple line breaks with a single line break
+      return text.replace(/[\r\n]{2,}/g, '\n\n');
+  }
+  function reorderIndexes(items) {
+      let rearrangedItems = [];
+      items.forEach(item => {
+          if (item !== undefined) {
+              rearrangedItems.push(item);
           }
-          return base64;
+      });
+      return rearrangedItems;
+  }
+  function base64ToHex(base64) {
+      if (base64.length > 0) {
+          const binary = atob(base64);
+          let hex = '';
+          for (let i = 0; i < binary.length; i++) {
+              let char = binary.charCodeAt(i).toString(16);
+              hex += (char.length === 1 ? '0' : '') + char;
+          }
+          return hex;
       }
-
-      function convertToHttps(url) {
-          return url.replace(/^http:/, 'https:');
-      }
-      function Sidebar() {
-        if(document.getElementById("sidebar").style.width == "45%"){
-            document.getElementById("sidebar").style.width = "0";
-        } else {
-            document.getElementById("sidebar").style.width = "45%"; 
-        }
+      return base64;
+  }
+  function convertToHttps(url) {
+      return url.replace(/^http:/, 'https:');
+}
+  function Sidebar() {
+    if(document.getElementById("sidebar").style.width == "45%"){
+        document.getElementById("sidebar").style.width = "0";
+    } else {
+        document.getElementById("sidebar").style.width = "45%"; 
     }
-    fetch("https://gmspace-chat.fly.dev/api/users")
-      .then(res => res.text())
-      .then(users => function() {
-        document.getElementById("userCount").innerHTML = String(users+" User(s) Online")
-      })
-    const socket = io('https://gmspace-chat.fly.dev');
-    socket.on('user-count-change', function (userCount) {
-      console.log(userCount);
-      document.getElementById("userCount").innerHTML = String(userCount+" User(s) Online")
-    });
+}
+fetch("https://gmspace-chat.fly.dev/api/users")
+.then(res => res.text())
+.then(users => function() {
+  document.getElementById("userCount").innerHTML = String(users+" User(s) Online")
+})
+const socket = io('https://gmspace-chat.fly.dev');
+socket.on('user-count-change', function (userCount) {
+  console.log(userCount);
+  document.getElementById("userCount").innerHTML = String(userCount+" User(s) Online")
+});
 createSecretThemeType("ipaddr", ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"])
