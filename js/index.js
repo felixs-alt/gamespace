@@ -568,10 +568,10 @@ function updateSnow() {
 }
 
 function drawSnowOnDivs() {
-    const divElements = document.querySelectorAll('.game');
+    const divElements = document.querySelectorAll('.game,.searchbar,channel');
     divElements.forEach((div) => {
         const rect = div.getBoundingClientRect();
-        const snowHeight = 5; // Height of the snow line
+        const snowHeight = 10; // Height of the snow line
         // Draw a snow line on top of the div
         ctx.fillStyle = 'rgba(255, 255, 255, 0.9)'; // Snow color
         ctx.beginPath();
