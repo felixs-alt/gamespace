@@ -714,3 +714,11 @@ canvas{
   top:0;
   z-index:-1;
 }
+#topgames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#topgames div {
+  padding-right:10px;
+}
