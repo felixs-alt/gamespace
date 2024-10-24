@@ -255,8 +255,9 @@ footer {
  }
 
 .game {
-  height: 240px;
-  width: 200px;
+  height: 230px;
+  width: 190px;
+  left:5px;
   background: var(--theme);
   color: var(--text);
   text-decoration: none;
@@ -283,8 +284,8 @@ footer {
 .game-image {
   background: var(--theme);
   object-fit: cover;
-  height: 200px;
-  width: 200px;
+  height: 190px;
+  width: 190px;
   border-radius:20px;
 }
 
