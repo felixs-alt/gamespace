@@ -1823,5 +1823,10 @@
     "name": "Beer Strip",
     "url": "https://felixs-alt.github.io/ruffle/?swf=https://s1.oyuncubey.com/swf/BeerStrip.swf",
     "img": "https://m.exophase.com/steam/games/o/77e3eb5.png"
+  },
+  {
+    "name": "PolyTrack",
+    "url": "https://www.kodub.com/apps/polytrack",
+    "img": "https://polytrackgame.io/cache/data/image/game/how-to-play-polytrack-banner-polytrackgameio-f150x150.webp"
   }
 ]
