@@ -614,7 +614,7 @@ window.addEventListener('resize', () => {
     canvas.width = window.innerWidth
 });
 async function getWeather() {
-    const res = await fetch('https://api.tomorrow.io/v4/weather/realtime?location=Lomma&apikey=FY9b7HbawyBktGnvUyvX63l3cZW4NmqW', options)
+    const res = await fetch('https://gmspace-chat.fly.dev/api/tmrw', options)
     const json = await res.json();
     console.log(json)
     
