@@ -686,6 +686,17 @@ border: solid, #17ff8e;
   transition: 0.5s;
   z-index: 1000;
 }
+.schedule {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 999;
+}
 
 .sidebar .chat-btn {
   position: fixed;
@@ -695,7 +706,18 @@ border: solid, #17ff8e;
   color:black;
   transition: transform 0.3s;
 }
+.schedule .sch-btn {
+  position: fixed;
+  top: 30px;
+  left: 25px;
+  background-color: #17ff8e;
+  color:black;
+  transition: transform 0.3s;
+}
 .chat-btn:hover {
+  transform: scale(1.1);
+}
+.sch-btn:hover {
   transform: scale(1.1);
 }
 .sidebar-content {
