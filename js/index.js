@@ -389,6 +389,13 @@ document.addEventListener("DOMContentLoaded", function () {
   function convertToHttps(url) {
       return url.replace(/^http:/, 'https:');
 }
+function Schedule() {
+  if(document.getElementById("schedule").style.width == "400px"){
+      document.getElementById("schedule").style.width = "0";
+  } else {
+      document.getElementById("schedule").style.width = "400px"; 
+  }
+}
   function Sidebar() {
     if(document.getElementById("sidebar").style.width == "45%"){
         document.getElementById("sidebar").style.width = "0";
@@ -396,6 +403,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("sidebar").style.width = "45%"; 
     }
 }
+
 fetch("https://gmspace-chat.fly.dev/api/users")
 .then(res => res.text())
 .then(users => function() {
