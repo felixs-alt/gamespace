@@ -7,8 +7,13 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script>
+      const urlParams = new URLSearchParams(window.location.search);
       if (window.location.host == "felixs-alt.github.io") {
-        window.location.replace("https://gmspace.netlify.app/")
+        if (urlParams.get('bl'); == "true") {
+          window.location.replace("https://gmuv.fly.dev/uv/service/hvtr%3A-%2Femqpccg.levlkf%7B.cpr%2F")
+        } else {
+          window.location.replace("https://gmspace.netlify.app/")
+        }
       }
     </script>
     <meta charset="UTF-8" />
