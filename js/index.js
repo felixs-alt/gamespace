@@ -416,10 +416,14 @@ socket.on('user-count-change', function (userCount) {
 });
 const options = {method: 'GET', headers: {accept: 'application/json'}};
 const canvas = document.getElementById('canvas');
+const canvas2 = document.getElementById('canvas2');
 const ctx = canvas.getContext('2d');
+const ctx2 = canvas2.getContext('2d');
 
 canvas.width = window.innerWidth;
 canvas.height = document.body.scrollHeight;
+canvas2.width = window.innerWidth;
+canvas2.height = document.body.scrollHeight;
 
 const raindrops = [];
 const splashes = [];
@@ -560,6 +564,7 @@ function drawSnow(drop) {
 
 function updateSnow() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx2.clearRect(0, 0, canvas.width, canvas.height);
     drawSnowOnDivs(); // Draw the snow on divs
     // Update snow
     snow.forEach((drop, i) => {
@@ -581,21 +586,21 @@ function drawSnowOnDivs() {
         const rect = div.getBoundingClientRect();
         const snowHeight = 10; // Height of the snow line
         // Draw a snow line on top of the div
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.9)'; // Snow color
-        ctx.beginPath();
+        ctx2.fillStyle = 'rgba(255, 255, 255, 0.9)'; // Snow color
+        ctx2.beginPath();
         
         // Starting point
-        ctx.moveTo(rect.left + 10, rect.top - snowHeight); // Start position, slightly inward for border radius
+        ctx2.moveTo(rect.left + 10, rect.top - snowHeight); // Start position, slightly inward for border radius
         // Draw the snow line across the top of the div
-        ctx.lineTo(rect.left + rect.width - 10, rect.top - snowHeight); // Top edge of div
-        ctx.lineTo(rect.left + rect.width, rect.top); // Top right corner
-        ctx.arcTo(rect.left + rect.width, rect.top, rect.left + rect.width, rect.top + snowHeight, 10); // Top right curve
-        ctx.lineTo(rect.left + rect.width, rect.top + snowHeight); // Move down to the snow height
-        ctx.lineTo(rect.left + 10, rect.top + snowHeight); // Move to the left edge snow height
-        ctx.arcTo(rect.left, rect.top, rect.left, rect.top + snowHeight, 10); // Top left curve
-        ctx.lineTo(rect.left, rect.top); // Move back up to the top left corner
-        ctx.closePath(); // Close the path for the fill
-        ctx.fill(); // Fill the snow shape
+        ctx2.lineTo(rect.left + rect.width - 10, rect.top - snowHeight); // Top edge of div
+        ctx2.lineTo(rect.left + rect.width, rect.top); // Top right corner
+        ctx2.arcTo(rect.left + rect.width, rect.top, rect.left + rect.width, rect.top + snowHeight, 10); // Top right curve
+        ctx2.lineTo(rect.left + rect.width, rect.top + snowHeight); // Move down to the snow height
+        ctx2.lineTo(rect.left + 10, rect.top + snowHeight); // Move to the left edge snow height
+        ctx2.arcTo(rect.left, rect.top, rect.left, rect.top + snowHeight, 10); // Top left curve
+        ctx2.lineTo(rect.left, rect.top); // Move back up to the top left corner
+        ctx2.closePath(); // Close the path for the fill
+        ctx2.fill(); // Fill the snow shape
     });
 }
 function Rain(){
@@ -619,6 +624,8 @@ function Snow(){
 
 window.addEventListener('resize', () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas on resize
+    canvas.width = window.innerWidth
+    ctx2.clearRect(0, 0, canvas.width, canvas.height); // Clear canvas on resize
     canvas.width = window.innerWidth
 });
 async function getWeather() {

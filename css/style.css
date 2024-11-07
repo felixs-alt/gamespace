@@ -730,7 +730,7 @@ border: solid, #17ff8e;
   border: none;
   overflow: hidden;
 }
-canvas{
+.canvas{
   position:fixed;
   left:0;
   top:0;
