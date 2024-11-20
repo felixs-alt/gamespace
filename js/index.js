@@ -611,6 +611,7 @@ function Rain(){
     }
 }
 function Snow(){
+    document.getElementById("banner").src = "./images/snowbanner.png"
     snow.push(createSnow());
     updateSnow();
     (function myLoop(i) {
