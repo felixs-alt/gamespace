@@ -390,11 +390,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return url.replace(/^http:/, 'https:');
 }
 function Schedule() {
-  if(document.getElementById("schedule").style.width == "400px"){
-      document.getElementById("schedule").style.width = "0";
-  } else {
-      document.getElementById("schedule").style.width = "400px"; 
-  }
+  document.getElementById("schedule").classList.toggle("open");
 }
   function Sidebar() {
     if(document.getElementById("sidebar").style.width == "45%"){
@@ -403,17 +399,6 @@ function Schedule() {
         document.getElementById("sidebar").style.width = "45%"; 
     }
 }
-
-fetch("https://gmspace-chat.fly.dev/api/users")
-.then(res => res.text())
-.then(users => function() {
-  document.getElementById("userCount").innerHTML = String(users+" User(s) Online")
-})
-const socket = io('https://gmspace-chat.fly.dev');
-socket.on('user-count-change', function (userCount) {
-  console.log(userCount);
-  document.getElementById("userCount").innerHTML = String(userCount+" User(s) Online")
-});
 const options = {method: 'GET', headers: {accept: 'application/json'}};
 const canvas = document.getElementById('canvas');
 const canvas2 = document.getElementById('canvas2');
