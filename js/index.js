@@ -528,83 +528,84 @@ function updateRain() {
 setInterval(updateVisibleDivs, 1000); // Update visible divs every second
 
 
+// Function to create a single snowflake
 function createSnow() {
-    return {
-        x: Math.random() * canvas.width,
-        y: canvas.height*-1,
-        speedY: Math.random() + 1,
-        length: Math.random() * (6 - 2) + 2,
-    };
+  amp =  Math.random() * 0.01 + 0.2
+  return {
+      x: Math.random() * canvas.width, // Horizontal position
+      y: Math.random() * -canvas.height, // Start above the screen
+      speedY: Math.random() * 1 + 0.1, // Falling speed
+      size: Math.random() * 2 + 0.5, // Snowflake size
+      swayAmplitude: amp, // Amplitude of horizontal sway
+      swaySpeed: amp * 0.001, // Speed of sway
+      swayOffset: Math.random() * Math.PI * 2, // Random starting point for sway
+      opacity: Math.random() * 0.6 + 0.4 // Random opacity
+  };
 }
 
-
-function drawSnow(drop) {
-    ctx.beginPath();
-    ctx.moveTo(drop.x, drop.y);
-    ctx.lineTo(drop.x, drop.y + drop.length);
-    ctx.strokeStyle = `rgba(186, 186, 186,${Math.random() * (1 - 0.2) + 0.2})`;
-    ctx.lineWidth =  Math.random() * (6 - 2) + 2;
-    ctx.stroke();
+// Function to draw a single snowflake
+function drawSnowflake(snowflake) {
+  ctx.beginPath();
+  ctx.arc(snowflake.x, snowflake.y, snowflake.size, 0, Math.PI * 2);
+  ctx.fillStyle = `rgba(255, 255, 255, ${snowflake.opacity})`;
+  ctx.fill();
 }
 
+// Update and render the snowflakes
 function updateSnow() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx2.clearRect(0, 0, canvas.width, canvas.height);
-    drawSnowOnDivs(); // Draw the snow on divs
-    // Update snow
-    snow.forEach((drop, i) => {
-        drop.speedY *= Math.random() * (1 - 0.9995) + 0.9995
-        drop.y += drop.speedY
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+  drawSnowOnDivs(); // Keep drawing snow on divs
 
-        if (drop.y > canvas.height) {
-            snow[i] = createSnow();
-        }
+  snow.forEach((flake, index) => {
+      // Update position
+      flake.y += flake.speedY;
+      flake.x += Math.sin(flake.swayOffset) * flake.swayAmplitude;
+      flake.swayOffset += flake.swaySpeed;
 
-        drawSnow(drop);
-    });
-    requestAnimationFrame(updateSnow);
+      // Reset if out of bounds
+      if (flake.y > canvas.height || flake.x < 0 || flake.x > canvas.width) {
+          snow[index] = createSnow();
+      }
+
+      // Draw the snowflake
+      drawSnowflake(flake);
+  });
+
+  requestAnimationFrame(updateSnow);
 }
 
+// Snow on divs
 function drawSnowOnDivs() {
-    const divElements = document.querySelectorAll('.game,.searchbar,channel');
-    divElements.forEach((div) => {
-        const rect = div.getBoundingClientRect();
-        const snowHeight = 10; // Height of the snow line
-        // Draw a snow line on top of the div
-        ctx2.fillStyle = 'rgba(255, 255, 255, 0.9)'; // Snow color
-        ctx2.beginPath();
-        
-        // Starting point
-        ctx2.moveTo(rect.left + 10, rect.top - snowHeight); // Start position, slightly inward for border radius
-        // Draw the snow line across the top of the div
-        ctx2.lineTo(rect.left + rect.width - 10, rect.top - snowHeight); // Top edge of div
-        ctx2.lineTo(rect.left + rect.width, rect.top); // Top right corner
-        ctx2.arcTo(rect.left + rect.width, rect.top, rect.left + rect.width, rect.top + snowHeight, 10); // Top right curve
-        ctx2.lineTo(rect.left + rect.width, rect.top + snowHeight); // Move down to the snow height
-        ctx2.lineTo(rect.left + 10, rect.top + snowHeight); // Move to the left edge snow height
-        ctx2.arcTo(rect.left, rect.top, rect.left, rect.top + snowHeight, 10); // Top left curve
-        ctx2.lineTo(rect.left, rect.top); // Move back up to the top left corner
-        ctx2.closePath(); // Close the path for the fill
-        ctx2.fill(); // Fill the snow shape
-    });
+  const divElements = document.querySelectorAll('.game,.searchbar,channel');
+  divElements.forEach((div) => {
+      const rect = div.getBoundingClientRect();
+      const snowHeight = 10;
+
+      ctx2.fillStyle = 'rgba(255, 255, 255, 0.9)';
+      ctx2.beginPath();
+      ctx2.moveTo(rect.left + 10, rect.top - snowHeight);
+      ctx2.lineTo(rect.left + rect.width - 10, rect.top - snowHeight);
+      ctx2.arcTo(rect.left + rect.width, rect.top, rect.left + rect.width, rect.top + snowHeight, 10);
+      ctx2.lineTo(rect.left + rect.width, rect.top + snowHeight);
+      ctx2.lineTo(rect.left + 10, rect.top + snowHeight);
+      ctx2.arcTo(rect.left, rect.top, rect.left, rect.top + snowHeight, 10);
+      ctx2.lineTo(rect.left, rect.top);
+      ctx2.closePath();
+      ctx2.fill();
+  });
 }
-function Rain(){
-    raindrops.push(createRaindrop());
-    updateRain()
-    for (let i = 0; i < 300; i++) {
-        raindrops.push(createRaindrop());
-    }
-}
-function Snow(){
-    document.getElementById("gmbanner").src = "./images/snowbanner.png"
-    snow.push(createSnow());
-    updateSnow();
-    (function myLoop(i) {
-        setTimeout(function() {
-        snow.push(createSnow());
-          if (--i) myLoop(i);   //  decrement i and call myLoop again if i > 0
-        }, 10)
-      })(600);                   //  pass the number of iterations as an argument
+
+// Initialize snowfall
+function Snow() {
+  document.getElementById("gmbanner").src = "./images/snowbanner.png";
+
+  // Create initial snowflakes
+  for (let i = 0; i < 850; i++) {
+      snow.push(createSnow());
+  }
+
+  updateSnow();
 }
         // Function to draw snow on top of each div element
 
