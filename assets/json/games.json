@@ -1834,10 +1834,15 @@
     "url": "https://www.worldguessr.com/",
     "img": "https://static.wikia.nocookie.net/logopedia/images/0/0c/GeoGuessr_Globe.png"
   },
-  {
+  
+  { 
     "name": "Pokemon Emerald",
     "url": "https://felixs-alt.github.io/webretro/?core=autodetect&rom=https://felixs-alt.github.io/Files/Pokemon%20-%20Emerald%20Version%20(U).gba",
     "img": "https://archives.bulbagarden.net/media/upload/6/65/Emerald_EN_boxart.jpg"
+  },
+  { 
+    "name": "Eaglercraft",
+    "url": "https://felixs-alt.github.io/Eagler49/",
+    "img": "https://styles.redditmedia.com/t5_60aj9d/styles/communityIcon_serayq82g91a1.jpg"
   }
-  
 ]
