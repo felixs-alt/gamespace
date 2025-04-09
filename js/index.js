@@ -392,13 +392,6 @@ document.addEventListener("DOMContentLoaded", function () {
 function Schedule() {
   document.getElementById("schedule").classList.toggle("open");
 }
-  function Sidebar() {
-    if(document.getElementById("sidebar").style.width == "45%"){
-        document.getElementById("sidebar").style.width = "0";
-    } else {
-        document.getElementById("sidebar").style.width = "45%"; 
-    }
-}
 const options = {method: 'GET', headers: {accept: 'application/json'}};
 const canvas = document.getElementById('canvas');
 const canvas2 = document.getElementById('canvas2');
